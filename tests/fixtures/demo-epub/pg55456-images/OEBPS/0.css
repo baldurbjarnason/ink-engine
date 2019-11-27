@@ -1,0 +1,459 @@
+/**/
+body {
+  background-color: white;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+    url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
+}
+@keyframes slidein {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+@media screen and (min-width: 900px) {
+  article {
+    padding: 1rem 3rem;
+  }
+}
+div {
+  background-color: url("https://example.com/background-image.png");
+}
+p {
+  background-color: url("http://example.com/background-image.png");
+}
+h1 {
+  background-color: url("https://www.example.com/background-image.png");
+}
+h2 {
+  background-color: url("mailto:bling@bling.com");
+}
+body {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.texte600 {
+  font-size: 1.2em;
+}
+p {
+  text-align: justify;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  text-indent: 1.5em;
+}
+/* all headings centered */
+h1,
+h2 {
+  text-align: center;
+}
+h1 {
+  font-size: 1.8em;
+  line-height: 1.6em;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  word-spacing: 0.2em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+h2 {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  line-height: 1.6em;
+}
+.h2line1 {
+  font-size: 1em;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  word-spacing: 0.2em;
+}
+.h2line2 {
+  font-size: 0.8em;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  word-spacing: 0.2em;
+}
+hr.full {
+  width: 100%;
+  margin: 5em auto 5em auto;
+  border-width: 4px 0 0 0;
+  border-style: solid;
+  border-color: #000;
+  clear: both;
+}
+hr.small {
+  margin: 4em 35% 4em 35%;
+  border-color: #a9a9a9;
+  border-style: solid;
+  clear: both;
+}
+hr.small2 {
+  margin: 2em 45% 2em 45%;
+  border-color: #000;
+  border-style: solid;
+  clear: both;
+}
+hr.double {
+  margin: 2em 40% 2em 40%;
+  border-color: #000;
+  border-top-style: solid;
+  border-right-style: hidden;
+  border-bottom-style: solid;
+  border-left-style: hidden;
+  clear: both;
+}
+.titlepage {
+  page-break-before: always;
+  page-break-after: always;
+}
+.title1 {
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: lighter;
+  letter-spacing: 0.2em;
+  word-spacing: 0.2em;
+  text-indent: 0;
+}
+.title2 {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  word-spacing: 0.2em;
+  text-indent: 0;
+}
+.title3 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 70%;
+  margin-top: 6em;
+  margin-bottom: 1em;
+  text-indent: 0;
+}
+.title5 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 85%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  letter-spacing: 0.1em;
+  text-indent: 0;
+}
+.title6 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 70%;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  text-indent: 0;
+}
+.title8 {
+  text-align: center;
+  font-size: 1em;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  word-spacing: 0.2em;
+  text-indent: 0;
+}
+.firstletter1 {
+  font-size: 1.6em;
+}
+.firstletter2 {
+  font-size: 1em;
+}
+.smcap {
+  font-variant: small-caps;
+  font-size: 85%;
+}
+sup {
+  font-size: 60%;
+  vertical-align: 30%;
+}
+.center {
+  text-align: center;
+  text-indent: 0;
+}
+.left {
+  text-align: left;
+  text-indent: 0;
+}
+.right {
+  text-align: right;
+  text-indent: 0;
+}
+.br {
+  margin-top: 1.5em;
+}
+.br2 {
+  margin-top: 3em;
+}
+.border {
+  border-color: #000;
+}
+.small90 {
+  font-size: 85%;
+}
+.quote {
+  margin: 1em 5% 1em 5%;
+  font-size: 100%;
+}
+.background1 {
+  margin-top: -26em;
+  margin-left: 16em;
+}
+.background2 {
+  margin-top: -39em;
+  margin-left: 17em;
+}
+.margintop1 {
+  margin-top: 22em;
+}
+.marginleft1 {
+  margin-left: 11em;
+}
+.marginleft2 {
+  margin-left: 14em;
+}
+.marginleft3 {
+  margin-left: 12.5em;
+}
+/* poems */
+.poem {
+  text-align: left;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.poem .stanza {
+  margin: 1em 0 1em 0;
+}
+.poem span.i0 {
+  margin-left: 0;
+}
+.poem span.i1 {
+  margin-left: 0.5em;
+}
+.poem span.i2 {
+  margin-left: 1em;
+}
+.poem span.i3 {
+  margin-left: 1.5em;
+}
+.poem span.i4 {
+  margin-left: 2em;
+}
+.poem span.i5 {
+  margin-left: 2.5em;
+}
+.poem span.i6 {
+  margin-left: 3em;
+}
+.poem span.i7 {
+  margin-left: 3.5em;
+}
+.poem span.i8 {
+  margin-left: 4em;
+}
+.poem span.i9 {
+  margin-left: 4.5em;
+}
+.poem span.i10 {
+  margin-left: 5em;
+}
+.poem span.i11 {
+  margin-left: 5.5em;
+}
+.poem span.i12 {
+  margin-left: 6em;
+}
+.small1 {
+  font-size: 98%;
+  line-height: 98%;
+}
+.small2 {
+  font-size: 90.4%;
+  line-height: 97%;
+}
+.small3 {
+  font-size: 82.8%;
+  line-height: 96%;
+}
+.small4 {
+  font-size: 75.2%;
+  line-height: 95%;
+}
+.small5 {
+  font-size: 67.6%;
+  line-height: 94%;
+}
+.small6 {
+  font-size: 60%;
+  line-height: 93%;
+}
+/* poems noindent*/
+.poem .stanzanoindent {
+  margin: 1em 0 1em 0;
+  text-indent: 0;
+}
+/* images */
+img {
+  margin-left: auto;
+  margin-right: auto;
+}
+.agrandissement {
+  margin: 0 0 0 0;
+  text-align: center;
+  border: none;
+  text-align: center;
+}
+.figcenter {
+  margin: 4em auto 2em auto;
+  text-align: center;
+  text-indent: 0;
+}
+.figcenter2 {
+  margin: 2em auto 2em auto;
+  text-align: center;
+  text-indent: 0;
+}
+.figcenter2b {
+  margin: 1em auto 1em auto;
+  text-align: center;
+  text-indent: 0;
+}
+.figcenter3 {
+  margin: 2em auto 4em auto;
+  text-align: center;
+  text-indent: 0;
+}
+.floatl {
+  clear: left;
+  margin: 0.6em 0.6em 0.6em 0;
+  text-indent: 0;
+}
+.floatl2 {
+  clear: left;
+  margin: 1.6em 1.2em 0.6em 0;
+  text-indent: 0;
+}
+.floatr {
+  clear: right;
+  text-indent: 0;
+  margin: 0.6em 0 0.6em 0.6em;
+  padding: 0;
+  text-align: center;
+}
+/* tables */
+table {
+  margin: 1.25em auto 1.25em auto;
+}
+.tdltop {
+  text-align: left;
+  vertical-align: top;
+  padding-left: 0.5em;
+}
+.tdltop2 {
+  text-align: left;
+  vertical-align: top;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.tdrtop {
+  text-align: right;
+  vertical-align: top;
+  padding-right: 0.5em;
+}
+.tdrtop2 {
+  text-align: right;
+  vertical-align: top;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+/* page numbers */
+.pagenum {
+  font-size: 90%;
+  font-weight: normal;
+  font-style: normal;
+  text-align: right;
+  color: #c0c0c0;
+  background-color: inherit;
+  text-indent: 0;
+}
+.pagenum2 {
+  display: none;
+  font-size: 90%;
+  font-weight: normal;
+  font-style: normal;
+  text-align: right;
+  color: #c0c0c0;
+  background-color: inherit;
+  text-indent: 0;
+}
+/* note au lecteur */
+.fontnote {
+  font-family: sans-serif;
+}
+a:link {
+  color: #879bbb;
+  text-decoration: none;
+}
+/* correction popup */
+ins.correction {
+  text-decoration: none;
+  border-bottom: thin dotted silver;
+}
+/* e-readers */
+@media all {
+  /* was @media handheld */
+  body {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+  }
+  .titlepage {
+    text-align: center;
+    page-break-before: always;
+    page-break-after: always;
+  }
+  .border {
+    border: thin solid;
+    border-color: #000;
+  }
+  .background1 {
+    margin-top: -22em;
+    margin-left: 12em;
+  }
+  .background2 {
+    margin-top: -32em;
+    margin-left: 14em;
+  }
+  .nextpage {
+    page-break-before: always;
+  }
+  .pagenum2 {
+    display: none;
+  }
+  .floatl {
+    float: left;
+  }
+  .floatl2 {
+    float: left;
+  }
+  .floatr {
+    float: right;
+  }
+  .poem {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/**/
