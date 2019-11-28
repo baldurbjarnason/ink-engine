@@ -8,17 +8,17 @@ const purifyConfig = {
   IN_PLACE: true,
   WHOLE_DOCUMENT: true,
   ALLOW_TAGS: ["reader-highlight"],
-  FORBID_TAGS: ["meta", "form", "title", "link"],
+  FORBID_TAGS: ["meta", "form", "title"],
   FORBID_ATTR: ["srcset", "action", "background", "poster"]
 };
 
 // In theory this should work for SVG images as well.
-export async function purifyChapter(
+module.exports = function purifyChapter(
   chapter,
   chapterPath,
   contentType = "text/html"
 ) {
-  const resourceURL = new URL(chapterPath);
+  const resourceURL = new URL(chapterPath, 'https://example.com/');
   let dom;
   try {
     dom = new JSDOM(chapter, {

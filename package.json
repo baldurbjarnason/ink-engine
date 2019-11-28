@@ -1,5 +1,5 @@
 {
-  "name": "process-publication",
+  "name": "ink-engine",
   "version": "0.1.0",
   "description": "Process documents as W3C Publications",
   "license": "GPL-3.0-or-later",
@@ -23,6 +23,11 @@
     "cheerio": "^1.0.0-rc.3",
     "dompurify": "^2.0.7",
     "jsdom": "^15.2.1",
+    "postcss": "^7.0.23",
+    "postcss-prefix-selector": "^1.7.2",
+    "postcss-selector-parser": "^6.0.2",
+    "postcss-value-parser": "^4.0.2",
+    "rimraf": "^3.0.0",
     "to-vfile": "^6.0.0",
     "unzipper": "^0.10.5",
     "valid-data-url": "^2.0.0",

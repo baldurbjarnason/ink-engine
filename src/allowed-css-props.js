@@ -432,6 +432,9 @@ module.exports = function testProp(prop, value) {
   if (prop === "text-align" && value === "justify") {
     return false;
   }
+  if (prop === 'position' && value === 'fixed') {
+    return false;
+  }
   if (prop.startsWith("--")) return true;
   if (cssProps.indexOf(prop) > -1) return true;
 }
