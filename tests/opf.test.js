@@ -1,7 +1,7 @@
-import tap from "tap";
-import parseOPF from "../src/formats/opf";
-import * as fs from "fs";
-import * as path from "path";
+const tap = require("tap");
+const parseOPF = require("../src/formats/opf");
+const fs = require("fs");
+const path = require("path");
 
 tap.test("parseOPF - epub2", async test => {
   const bookMeta = fs.readFileSync(
