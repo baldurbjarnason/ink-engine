@@ -83,7 +83,6 @@ function purify(resourceURL, window) {
       node.getAttribute("rel") === "stylesheet" &&
       !testPath(node.getAttribute("href"), resourceURL)
     ) {
-      console.log("removing node");
       node.remove();
     }
   });

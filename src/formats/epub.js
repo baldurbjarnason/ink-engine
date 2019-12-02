@@ -104,7 +104,7 @@ async function epub(file, extract, { sanitize = true }) {
             this.push(null);
           }
         });
-        urls[resource.url] = await extract(stream, {
+        urls[resource.url] = await extract(stream, resource, {
           contentType: resource.encodingFormat
         });
         if (resource.rel.includes("contents") || resource.rel.includes("ncx")) {
@@ -122,14 +122,14 @@ async function epub(file, extract, { sanitize = true }) {
             this.push(null);
           }
         });
-        urls[resource.url] = await extract(stream, {
+        urls[resource.url] = await extract(stream, resource, {
           contentType: resource.encodingFormat
         });
       } else if (!JSTYPES.includes(resource.encodingFormat)) {
         const stream = fs.createReadStream(
           path.join(tempDirectory, resource.url)
         );
-        urls[resource.url] = await extract(stream, {
+        urls[resource.url] = await extract(stream, resource, {
           contentType: resource.encodingFormat
         });
       }
@@ -139,7 +139,7 @@ async function epub(file, extract, { sanitize = true }) {
       const stream = fs.createReadStream(
         path.join(tempDirectory, resource.url)
       );
-      urls[resource.url] = await extract(stream, {
+      urls[resource.url] = await extract(stream, resource, {
         contentType: resource.encodingFormat
       });
     }

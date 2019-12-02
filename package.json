@@ -14,7 +14,6 @@
     "node": "10"
   },
   "healthier": {
-    "parser": "babel-eslint",
     "ignore": [
       "__sapper__",
       "rollup.config.js"
@@ -24,6 +23,7 @@
     "cheerio": "^1.0.0-rc.3",
     "dompurify": "^2.0.7",
     "jsdom": "^15.2.1",
+    "mammoth": "^1.4.9",
     "postcss": "^7.0.23",
     "postcss-prefix-selector": "^1.7.2",
     "postcss-selector-parser": "^6.0.2",

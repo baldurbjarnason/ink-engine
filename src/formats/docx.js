@@ -1,68 +1,75 @@
-
-const os = require('os');
-const fs = require('fs');
-const path = require('path');
+const os = require("os");
+const fs = require("fs");
+const path = require("path");
 const mammoth = require("mammoth");
-const purify = require('../dompurify')
-const Readable = require('stream').Readable
-const util = require('util');
-const rimraf = util.promisify(require('rimraf'))
+const purify = require("../dompurify");
+const util = require("util");
+const rimraf = util.promisify(require("rimraf"));
+const vfile = require("vfile");
+const options = {
+  styleMap: [
+    "p[style-name='Title'] => h1:fresh",
+    "p[style-name='Quote'] => blockquote:fresh",
+    "r[style-name='Emphasis'] => em:fresh",
+    "p[style-name='Intense Quote'] => blockquote:fresh",
+    "p[style-name='Section Title'] => h2:fresh",
+    "p[style-name='Subsection Title'] => h3:fresh"
+  ]
+};
 
-module.exports = async function docx (filepath, extract, {sanitize = true}) {
-  const html = await mammoth.convertToHtml({path: filepath})
-  const md = await mammoth.convertToHtml({path: filepath})
+module.exports = async function docx(filepath, extract, { sanitize = true }) {
+  const html = await mammoth.convertToHtml({ path: filepath }, options);
   const book = {
-    name: path.basename(filepath, '.docx'),
-    resource: [
+    name: path.basename(filepath, ".docx"),
+    resources: [
       {
-        "url": "/index.html",
-        "rel": ["alternate"],
-        "encodingFormat": "text/html"
-      },
+        url: "index.html",
+        rel: ["alternate"],
+        encodingFormat: "text/html"
+      }
+    ],
+    readingOrder: [
       {
-        "url": "/index.md",
-        "rel": ["alternate"],
-        "encodingFormat": "text/markdown"
-      }],
-      readingOrder: [
-        {
-          "url": "/index.html",
-          "rel": [],
-          "encodingFormat": "text/html"
-        }]
-  }
-  const urls = {}
+        url: "index.html",
+        rel: [],
+        encodingFormat: "text/html"
+      }
+    ]
+  };
+  const urls = {};
   // convert to publication
   // Use as reference when unzipping, deciding whether to sanitize or not.
 
-  const clean = purify(wrap(html.value, book.name), 'index.html')
-  const tempDirectory = path.join(os.tmpdir(), path.basename(filepath), '/');
-  await fs.promises.writeFile(path.join(tempDirectory, 'index.html'), clean)
-  await fs.promises.writeFile(path.join(tempDirectory, 'index.md'), md)
-  for (const resource of book.resources) {
-    const stream = fs.createReadStream(path.join(tempDirectory, resource.url))
-    urls[resource.url] = await extract(stream, {contentType: resource.encodingFormat})
-  }
-  const bookStream = new Readable({
-    read (size) {
-      this.push(JSON.stringify(book))
-      this.push(null)
-    }
-  })
-  urls[path.join(filepath, 'index.json')] = await extract(bookStream, {contentType: "application/json"} );
-  
-  book.resources = book.resources.map(updateURL)
-  book.readingOrder = book.readingOrder.map(updateURL)
-  console.log(tempDirectory, rimraf)
-  // await rimraf(tempDirectory)
-  return book
-  function updateURL (resource) {
-    resource.url = urls[resource.url]
-    return resource
-  }
-}
+  const clean = await purify(wrap(html.value, book.name), "index.html");
+  const tempDirectory = path.join(os.tmpdir(), path.basename(filepath), "/");
+  await fs.promises.writeFile(path.join(tempDirectory, "index.html"), clean);
+  const htmlfile = vfile({
+    contents: clean,
+    path: "index.html",
+    messages: html.messages
+  });
+  urls["index.html"] = await extract(htmlfile, book.resources[0], {
+    contentType: "text/html"
+  });
+  const bookFile = vfile({
+    contents: JSON.stringify(book),
+    path: "index.json"
+  });
+  urls["index.json"] = await extract(bookFile, book, {
+    contentType: "application/json"
+  });
 
-function wrap (body, title) {
+  book.resources = book.resources.map(updateURL);
+  book.readingOrder = book.readingOrder.map(updateURL);
+  await rimraf(tempDirectory);
+  return book;
+  function updateURL(resource) {
+    resource.url = urls[resource.url];
+    return resource;
+  }
+};
+
+function wrap(body, title) {
   return `<!doctype html>
   <html>
   <head>
@@ -74,5 +81,5 @@ function wrap (body, title) {
   ${body}
   </body>
   </html>
-  `
+  `;
 }
