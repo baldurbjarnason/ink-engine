@@ -42,6 +42,7 @@ module.exports = async function docx(filepath, extract, { sanitize = true }) {
 
   const clean = await purify(wrap(html.value, book.name), "index.html");
   const tempDirectory = path.join(os.tmpdir(), path.basename(filepath), "/");
+  await fs.promises.mkdir(tempDirectory, { recursive: true });
   await fs.promises.writeFile(path.join(tempDirectory, "index.html"), clean);
   const htmlfile = vfile({
     contents: clean,
