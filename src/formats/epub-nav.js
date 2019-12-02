@@ -70,11 +70,10 @@ function parseNCX($, url) {
   const toc = {
     type: "NCX",
     url,
-    children: [],
-    inLanguage: "en"
+    children: []
   };
   toc.heading = $("docTitle > text").text();
-  toc.inLanguage = $("ncx").attr("xml:lang");
+  toc.inLanguage = $("ncx").attr("xml:lang") || "en";
   $("navMap > navPoint").each((i, element) =>
     parseNavPoint(i, element, toc, $)
   );
