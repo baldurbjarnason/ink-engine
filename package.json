@@ -4,7 +4,7 @@
   "description": "Process documents as W3C Publications",
   "license": "GPL-3.0-or-later",
   "scripts": {
-    "lint": "tsc --checkJs --allowJs --noEmit --lib es2015 --moduleResolution node  index.js && healthier && prettier --write --plugin-search-dir=. '**/*.{js,json,css,yml,svelte}'",
+    "lint": "healthier && prettier --write --plugin-search-dir=. '**/*.{js,json,css,yml,svelte}'",
     "pretest": "npm run lint",
     "prepublishOnly": "npm run lint",
     "test": "tap tests/*.test.js",
@@ -14,6 +14,7 @@
     "node": "10"
   },
   "healthier": {
+    "parser": "babel-eslint",
     "ignore": [
       "__sapper__",
       "rollup.config.js"
@@ -34,6 +35,7 @@
     "vfile": "^4.0.2"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.3",
     "healthier": "3.2.0",
     "prettier": "1.19.1",
     "tap": "14.9.2",
