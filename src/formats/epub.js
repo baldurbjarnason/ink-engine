@@ -80,9 +80,13 @@ async function epub(file, extract, { sanitize = true }) {
     contents: JSON.stringify(book),
     path: "index.json"
   });
-  urls["index.json"] = await extract(bookFile, book, {
-    contentType: "application/json"
-  });
+  urls["index.json"] = await extract(
+    bookFile,
+    Object.assign({ url: "index.json" }, book),
+    {
+      contentType: "application/json"
+    }
+  );
   let files = [];
 
   const tempDirectory = path.join(os.tmpdir(), path.basename(file), "/");
@@ -167,7 +171,6 @@ async function epub(file, extract, { sanitize = true }) {
   // call processor and extract generated json
   await process({ files, cwd: tempDirectory, output: tempDirectory }, extract);
   book.resources = book.resources.map(updateURL);
-  book.readingOrder = book.readingOrder.map(updateURL);
   await rimraf(tempDirectory);
   return book;
   function updateURL(resource) {

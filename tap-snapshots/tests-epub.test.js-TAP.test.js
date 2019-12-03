@@ -156,7 +156,7 @@ VFile {
 `;
 
 exports[
-  `tests/epub.test.js TAP epub process - sanitise false > epub unsanitised file undefined 1`
+  `tests/epub.test.js TAP epub process - sanitise false > epub unsanitised file index.json 1`
 ] = `
 VFile {
   "contents": "{\\"type\\":\\"Publication\\",\\"links\\":[],\\"resources\\":[{\\"url\\":\\"OEBPS/toc.ncx\\",\\"rel\\":[\\"ncx\\"],\\"encodingFormat\\":\\"application/x-dtbncx+xml\\"},{\\"url\\":\\"OEBPS/css/style.css\\",\\"rel\\":[],\\"encodingFormat\\":\\"text/css\\"},{\\"url\\":\\"OEBPS/aftermath.xhtml\\",\\"rel\\":[],\\"encodingFormat\\":\\"application/xhtml+xml\\"},{\\"type\\":\\"LinkedResource\\",\\"rel\\":[\\"alternate\\",\\"describedby\\"],\\"url\\":\\"OEBPS/content.opf\\",\\"encodingFormat\\":\\"application/oebps-package+xml\\"}],\\"readingOrder\\":[{\\"url\\":\\"OEBPS/aftermath.xhtml\\",\\"rel\\":[],\\"encodingFormat\\":\\"application/xhtml+xml\\"}],\\"json\\":{\\"epubVersion\\":\\"2.0\\"},\\"inLanguage\\":\\"en\\",\\"name\\":\\"Minimal Test File\\",\\"identifier\\":\\"urn:D35116F7-9AF8-4C13-B348-85E031B31080\\",\\"creator\\":[\\"Baldur Bjarnason\\"],\\"publisher\\":[],\\"author\\":[],\\"translator\\":[],\\"illustrator\\":[],\\"editor\\":[],\\"colorist\\":[],\\"contributor\\":[\\"Baldur Bjarnason\\"]}",
@@ -195,7 +195,7 @@ Object {
     Object {
       "encodingFormat": "application/xhtml+xml",
       "rel": Array [],
-      "url": undefined,
+      "url": "uploaded/OEBPS/aftermath.xhtml",
     },
   ],
   "resources": Array [
@@ -214,7 +214,7 @@ Object {
     Object {
       "encodingFormat": "application/xhtml+xml",
       "rel": Array [],
-      "url": undefined,
+      "url": "uploaded/OEBPS/aftermath.xhtml",
     },
     Object {
       "encodingFormat": "application/oebps-package+xml",
@@ -288,7 +288,7 @@ Object {
 `;
 
 exports[
-  `tests/epub.test.js TAP epub process - sanitise false > epub unsanitised resource undefined 1`
+  `tests/epub.test.js TAP epub process - sanitise false > epub unsanitised resource index.json 1`
 ] = `
 Object {
   "author": Array [],
@@ -346,6 +346,7 @@ Object {
   ],
   "translator": Array [],
   "type": "Publication",
+  "url": "index.json",
 }
 `;
 
@@ -497,7 +498,7 @@ VFile {
 }
 `;
 
-exports[`tests/epub.test.js TAP epub process > epub file undefined 1`] = `
+exports[`tests/epub.test.js TAP epub process > epub file index.json 1`] = `
 VFile {
   "contents": "{\\"type\\":\\"Publication\\",\\"links\\":[],\\"resources\\":[{\\"url\\":\\"OEBPS/toc.ncx\\",\\"rel\\":[\\"ncx\\"],\\"encodingFormat\\":\\"application/x-dtbncx+xml\\"},{\\"url\\":\\"OEBPS/css/style.css\\",\\"rel\\":[],\\"encodingFormat\\":\\"text/css\\"},{\\"url\\":\\"OEBPS/aftermath.xhtml\\",\\"rel\\":[],\\"encodingFormat\\":\\"application/xhtml+xml\\"},{\\"type\\":\\"LinkedResource\\",\\"rel\\":[\\"alternate\\",\\"describedby\\"],\\"url\\":\\"OEBPS/content.opf\\",\\"encodingFormat\\":\\"application/oebps-package+xml\\"}],\\"readingOrder\\":[{\\"url\\":\\"OEBPS/aftermath.xhtml\\",\\"rel\\":[],\\"encodingFormat\\":\\"application/xhtml+xml\\"}],\\"json\\":{\\"epubVersion\\":\\"2.0\\"},\\"inLanguage\\":\\"en\\",\\"name\\":\\"Minimal Test File\\",\\"identifier\\":\\"urn:D35116F7-9AF8-4C13-B348-85E031B31080\\",\\"creator\\":[\\"Baldur Bjarnason\\"],\\"publisher\\":[],\\"author\\":[],\\"translator\\":[],\\"illustrator\\":[],\\"editor\\":[],\\"colorist\\":[],\\"contributor\\":[\\"Baldur Bjarnason\\"]}",
   "cwd": "/Users/baldurbjarnason/Projects/ink-engine",
@@ -533,7 +534,7 @@ Object {
     Object {
       "encodingFormat": "application/xhtml+xml",
       "rel": Array [],
-      "url": undefined,
+      "url": "uploaded/OEBPS/aftermath.xhtml",
     },
   ],
   "resources": Array [
@@ -552,7 +553,7 @@ Object {
     Object {
       "encodingFormat": "application/xhtml+xml",
       "rel": Array [],
-      "url": undefined,
+      "url": "uploaded/OEBPS/aftermath.xhtml",
     },
     Object {
       "encodingFormat": "application/oebps-package+xml",
@@ -625,7 +626,7 @@ Object {
 }
 `;
 
-exports[`tests/epub.test.js TAP epub process > epub resource undefined 1`] = `
+exports[`tests/epub.test.js TAP epub process > epub resource index.json 1`] = `
 Object {
   "author": Array [],
   "colorist": Array [],
@@ -682,5 +683,6 @@ Object {
   ],
   "translator": Array [],
   "type": "Publication",
+  "url": "index.json",
 }
 `;

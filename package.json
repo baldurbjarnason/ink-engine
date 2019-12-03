@@ -8,7 +8,7 @@
     "pretest": "npm run lint",
     "prepublishOnly": "npm run lint",
     "test": "tap tests/*.test.js",
-    "snapshots": "TAP_SNAPSHOT=1 npm run test"
+    "snapshots": "TAP_SNAPSHOT=1 npm run test && prettier --write --plugin-search-dir=. '**/*.{js,json,css,yml,svelte}'"
   },
   "engines": {
     "node": "10"
@@ -29,6 +29,7 @@
     "hastscript": "^5.1.1",
     "jsdom": "^15.2.1",
     "mammoth": "^1.4.9",
+    "mime": "^2.4.4",
     "postcss": "^7.0.23",
     "postcss-prefix-selector": "^1.7.2",
     "postcss-selector-parser": "^6.0.2",
