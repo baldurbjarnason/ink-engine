@@ -6,6 +6,7 @@ const purify = require("../dompurify");
 const util = require("util");
 const rimraf = util.promisify(require("rimraf"));
 const vfile = require("vfile");
+const process = require("../unified");
 const options = {
   styleMap: [
     "p[style-name='Title'] => h1:fresh",
@@ -46,8 +47,7 @@ module.exports = async function docx(filepath, extract, { sanitize = true }) {
   await fs.promises.writeFile(path.join(tempDirectory, "index.html"), clean);
   const htmlfile = vfile({
     contents: clean,
-    path: "index.html",
-    messages: html.messages
+    path: path.join(tempDirectory, "index.html")
   });
   urls["index.html"] = await extract(htmlfile, book.resources[0], {
     contentType: "text/html"
@@ -59,7 +59,15 @@ module.exports = async function docx(filepath, extract, { sanitize = true }) {
   urls["index.json"] = await extract(bookFile, book, {
     contentType: "application/json"
   });
-
+  htmlfile.data.book = book;
+  htmlfile.data.toc = false;
+  htmlfile.data.resource = {
+    url: "index.html",
+    rel: ["alternate"],
+    encodingFormat: "text/html"
+  };
+  const files = [htmlfile];
+  await process({ files, cwd: tempDirectory, output: tempDirectory }, extract);
   book.resources = book.resources.map(updateURL);
   book.readingOrder = book.readingOrder.map(updateURL);
   await rimraf(tempDirectory);
