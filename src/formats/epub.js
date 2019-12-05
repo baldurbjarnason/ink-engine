@@ -11,6 +11,7 @@ const parseToC = require("./epub-nav");
 const toVfile = require("to-vfile");
 const vfile = require("vfile");
 const process = require("../unified");
+const crypto = require("crypto");
 
 const JSTYPES = [
   "text/javascript",
@@ -88,8 +89,14 @@ async function epub(file, extract, { sanitize = true }) {
     }
   );
   let files = [];
-
-  const tempDirectory = path.join(os.tmpdir(), path.basename(file), "/");
+  const randomFileName = crypto.randomBytes(15).toString("hex");
+  const tempDirectory = path.join(
+    os.tmpdir(),
+    randomFileName,
+    path.basename(file),
+    "/"
+  );
+  // await fs.promises.mkdir(tempDirectory, { recursive: true });
   const extractor = unzip.Extract({ path: tempDirectory });
   fs.createReadStream(file).pipe(extractor);
   await extractor.promise();
