@@ -18,24 +18,26 @@ function setup(admin, done) {
     const fileName = path.basename(filePath);
     const contentType = object.contentType;
     const [userType, userId, , pubId] = filePath.split("/");
-    if (!userId || !pubId) return;
-    if (!formats[contentType]) return;
+    if (!userId || !pubId)
+      return done(new Error("User id and pub id are required"));
+    if (!formats[contentType])
+      return done(new Error("Not a supported content type"));
     // The user id here has to be the sub/account id, not the profile id
     // The pubId should be the publication pathname, not its full URL
     const targetPath = [userType, userId, "documents", pubId].join("/");
     const thumbnailPath = [userType, userId, "thumbnails", pubId].join("/");
     const bucket = admin.storage().bucket(fileBucket);
     const tempFilePath = path.join(os.tmpdir(), fileName);
-    await bucket.file(filePath).download({ destination: tempFilePath });
     let book;
     try {
+      await bucket.file(filePath).download({ destination: tempFilePath });
       book = await engine(tempFilePath, extract, { type: contentType });
+      fs.unlinkSync(tempFilePath);
     } catch (err) {
       done(err);
       // In case of error, the original publication needs to be updated to note that importing the book failed.
       // Also needs to add the file to the resources list as an alternate as we do on success.
     }
-    fs.unlinkSync(tempFilePath);
     if (book) {
       book.resources = book.resources.concat({
         type: "LinkedResource",
@@ -52,14 +54,10 @@ function setup(admin, done) {
         resource.encodingFormat &&
         resource.encodingFormat.includes("image")
       ) {
-        try {
-          thumb = await sharp(file.contents)
-            .resize(THUMBSIZE, THUMBSIZE, { fit: "inside" })
-            .jpeg({ quality: 60 })
-            .toBuffer();
-        } catch (err) {
-          console.error(err);
-        }
+        thumb = await sharp(file.contents)
+          .resize(THUMBSIZE, THUMBSIZE, { fit: "inside" })
+          .jpeg({ quality: 60 })
+          .toBuffer();
       }
       const filename = path.join(targetPath, resource.url);
       const storageFile = bucket.file(filename);

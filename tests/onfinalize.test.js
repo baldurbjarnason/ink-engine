@@ -49,6 +49,44 @@ tap.test("upload finalize", async test => {
   }
 });
 
+tap.test("upload finalize errors", async test => {
+  // Mocks
+  const admin = {
+    storage() {
+      return {
+        bucket() {
+          return bucket;
+        }
+      };
+    }
+  };
+
+  const bucket = {
+    file(filename) {
+      return {
+        download({ destination }) {
+          // copy test file to destination
+          return Promise.resolve();
+        },
+        save(contents, options) {
+          test.matchSnapshot(contents, "epub finalize " + filename);
+          test.matchSnapshot(options, "epub finalize options " + filename);
+        }
+      };
+    }
+  };
+  const finalise = setup(admin, done);
+  await finalise({
+    name: "user/user-123/publications/test-1234/test-epub.epub",
+    bucket: "test-bucket",
+    contentType: "application/epub+zip"
+  });
+  function done(err, result) {
+    test.ok(err);
+    test.notOk(result);
+  }
+});
+
 const docxPath = path.join(__dirname, "fixtures/test.docx");
 
 tap.test("upload finalize docx", async test => {
@@ -87,5 +125,32 @@ tap.test("upload finalize docx", async test => {
   function done(err, result) {
     test.notOk(err);
     test.matchSnapshot(result, "docx first result");
+  }
+});
+
+tap.test("should not work without user id", async test => {
+  const finalise = setup({}, done);
+  await finalise({
+    name: "publications/test-1234/test.docx",
+    bucket: "test-bucket",
+    contentType:
+      "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+  });
+  function done(err, result) {
+    test.ok(err);
+    test.equals(err.message, "User id and pub id are required");
+  }
+});
+
+tap.test("needs to be a known content type", async test => {
+  const finalise = setup({}, done);
+  await finalise({
+    name: "user/user-123/publications/test-1234/test.docx",
+    bucket: "test-bucket",
+    contentType: "example-content-type/does-not-exist"
+  });
+  function done(err, result) {
+    test.ok(err);
+    test.equals(err.message, "Not a supported content type");
   }
 });
