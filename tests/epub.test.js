@@ -21,7 +21,10 @@ tap.test("epub process", async test => {
     test.matchSnapshot(resource, "epub resource " + resource.url);
     return Promise.resolve("uploaded/" + resource.url);
   }
-  const result = await process(epubPath, extract);
+  const result = await process(
+    path.join(__dirname, "fixtures/test-epub-js.epub"),
+    extract
+  );
   test.matchSnapshot(result, "epub first result");
 });
 
