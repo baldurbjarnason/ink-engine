@@ -5,7 +5,9 @@
  * Make sure to inspect the output below.  Do not ignore changes!
  */
 "use strict";
-exports[`tests/unified.test.js TAP processCSS > parse xhtml, invalid 1`] = `
+exports[
+  `tests/unified.test.js TAP parse html for processor > parse xhtml, invalid 1`
+] = `
 Object {
   "children": Array [
     Object {
