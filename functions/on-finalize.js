@@ -14,7 +14,7 @@ module.exports = setup
 
 // Test by mocking the admin, bucket, and file endpoints.
 // Use fetch-mock to test API server update.
-
+// This setup needs to take a done callback that knows what to do with the book and what to do if there is an error.
 function setup (admin) {
   return async function onFinalize (object, context) {
     const fileBucket = object.bucket;
@@ -36,9 +36,17 @@ function setup (admin) {
       book = await engine(tempFilePath, extract, {type: contentType})
     } catch (err) {
       console.error(err)
+      // In case of error, the original publication needs to be updated to note that importing the book failed.
+      // Also needs to add the file to the resources list as an alternate as we do on success.
     }
     if (book) {
       // make api server request to update publication
+      book.resources = book.resources.concat({
+        type: "LinkedResource",
+        rel: ["alternate"],
+        url: `https://storage.googleapis.com/${fileBucket}/${filePath}`,
+        encodingFormat: "contentType"
+      })
       await updatePub({publication: pubId, payload: book, userId})
       // Then add to firestore as well?
       // const database = admin.firestore();
