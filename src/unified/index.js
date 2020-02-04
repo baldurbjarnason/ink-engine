@@ -49,6 +49,7 @@ module.exports = function processEngine({ files, output, cwd }, extract) {
 };
 
 async function processFiles(files, extract) {
+  console.log("Processing: ", files.map(file => file.data.resource.url + ".json"))
   let count = 0;
   for (const file of files) {
     count = count + file.data.wordcount;
@@ -63,5 +64,6 @@ async function processFiles(files, extract) {
       contentType: "application/json"
     });
   }
+  console.log("Word count: ", count)
   return count;
 }
