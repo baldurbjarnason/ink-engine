@@ -191,10 +191,9 @@ async function epub(
     extract
   );
   book.resources = book.resources.map(updateURL);
+  console.log('Processing result: ', result)
   if (result.wordcount) {
     book.wordCount = result.wordcount;
-  } else {
-    console.log('Processing: ', result)
   }
   await rimraf(tempDirectory);
   return book;
