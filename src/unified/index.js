@@ -52,7 +52,9 @@ async function processFiles(files, extract) {
   console.log("Processing: ", files.map(file => file.data.resource.url + ".json"))
   let count = 0;
   for (const file of files) {
-    count = count + file.data.wordcount;
+    if (Number.isInteger(file.data.wordcount)) {
+      count = count + file.data.wordcount;
+    }
   }
   for (const file of files) {
     const resource = Object.assign({}, file.data.resource, {
