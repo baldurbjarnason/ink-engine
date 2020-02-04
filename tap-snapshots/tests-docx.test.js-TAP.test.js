@@ -59,6 +59,23 @@ VFile {
       ],
       "wordCount": 581,
     },
+    "keyphrases": Array [
+      "use",
+      "Styles",
+      "text",
+      "MLA",
+      "title",
+      "Table",
+    ],
+    "keywords": Array [
+      "use",
+      "text",
+      "MLA",
+      "Styles",
+      "title",
+      "notes",
+      "Table",
+    ],
     "resource": Object {
       "encodingFormat": "text/html",
       "rel": Array [

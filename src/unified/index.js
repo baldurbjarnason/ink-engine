@@ -7,6 +7,8 @@ const latin = require("retext-latin");
 const wordcount = require("./wordcount");
 const transformer = require("./transformer");
 const slug = require("rehype-slug");
+const pos = require("retext-pos");
+const keywords = require("retext-keywords");
 // const fs = require("fs");
 
 const processor = unified()
@@ -15,6 +17,8 @@ const processor = unified()
     text,
     unified()
       .use(latin)
+      .use(pos)
+      .use(keywords)
       .use(wordcount)
   )
   .use(slug)

@@ -84,6 +84,14 @@ VFile {
       "type": "Publication",
       "wordCount": 6,
     },
+    "keyphrases": Array [
+      "test text",
+      "Test",
+    ],
+    "keywords": Array [
+      "Test",
+      "text",
+    ],
     "resource": Object {
       "encodingFormat": "application/xhtml+xml",
       "rel": Array [],
@@ -437,6 +445,14 @@ VFile {
       "type": "Publication",
       "wordCount": 6,
     },
+    "keyphrases": Array [
+      "test text",
+      "Test",
+    ],
+    "keywords": Array [
+      "Test",
+      "text",
+    ],
     "resource": Object {
       "encodingFormat": "application/xhtml+xml",
       "rel": Array [],
