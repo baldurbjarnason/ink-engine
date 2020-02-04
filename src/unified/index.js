@@ -1,7 +1,7 @@
 const engine = require("unified-engine");
 const unified = require("unified");
 const parse = require("./parse");
-const stringify = require("rehype-stringify");
+// const stringify = require("rehype-stringify");
 const text = require("./rehype-text");
 const latin = require("retext-latin");
 const wordcount = require("./wordcount");
@@ -23,7 +23,6 @@ const processor = unified()
   )
   .use(slug)
   .use(transformer)
-  .use(stringify)
   .freeze();
 
 module.exports = function processEngine({ files, output, cwd }, extract) {
