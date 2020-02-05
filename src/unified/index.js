@@ -1,4 +1,4 @@
-const engine = require("unified-engine");
+// const engine = require("unified-engine");
 const unified = require("unified");
 const parse = require("./parse");
 // const stringify = require("rehype-stringify");
@@ -23,33 +23,26 @@ const processor = unified()
   )
   .use(slug)
   .use(transformer)
-  .freeze();
-
-module.exports = function processEngine({ files, output, cwd }, extract) {
-  const promise = new Promise((resolve, reject) => {
-    engine(
-      {
-        processor,
-        files,
-        cwd,
-        output,
-        silent: true,
-        treeOut: true
-      },
-      function(err, code, context) {
-        if (code === 1) {
-          return reject(new Error("Processing failed"))
-        } else if (err) {
-          return reject(err)
-        };
-        return processFiles(context.files, extract).then(wordcount => {
-          context.wordcount = wordcount;
-          return resolve(context);
-        });
-      }
-    );
+  .use(function(options) {
+    this.Compiler = compiler;
+    function compiler(tree) {
+      return JSON.stringify(tree, null, 2);
+    }
   });
-  return promise;
+
+module.exports = async function processEngine({ files, output, cwd }, extract) {
+  let processed = [];
+  try {
+    for (const file of files) {
+      const result = await processor.process(file);
+      processed = processed.concat(result);
+    }
+    const wordcount = await processFiles(files, extract);
+    return { wordcount };
+  } catch (err) {
+    console.error(err);
+    throw err;
+  }
 };
 
 async function processFiles(files, extract) {
