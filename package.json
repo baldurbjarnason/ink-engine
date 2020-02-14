@@ -2,7 +2,7 @@
   "name": "ink-engine",
   "version": "0.1.0",
   "description": "Process documents as W3C Publications",
-  "license": "GPL-3.0-or-later",
+  "license": "Apache-2.0",
   "scripts": {
     "lint": "healthier && prettier --write --plugin-search-dir=. '**/*.{js,json,css,yml,svelte}'",
     "pretest": "npm run lint",
