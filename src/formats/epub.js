@@ -118,6 +118,11 @@ async function epub(
           "utf8"
         );
         toc = parseToC(file, resource.url);
+        extract(
+          { contents: JSON.stringify(toc) },
+          Object.assign(toc, { url: "contents.json" }),
+          { contentType: "application/json" }
+        );
       }
       if (
         resource.encodingFormat.includes("html") ||

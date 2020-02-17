@@ -61,6 +61,17 @@ Object {
 `;
 
 exports[
+  `tests/onfinalize.test.js TAP upload finalize > epub finalize options user/user-123/documents/test-1234/contents.json 1`
+] = `
+Object {
+  "metadata": Object {
+    "contentType": "application/json",
+  },
+  "resumable": false,
+}
+`;
+
+exports[
   `tests/onfinalize.test.js TAP upload finalize > epub finalize options user/user-123/documents/test-1234/index.json 1`
 ] = `
 Object {
@@ -313,7 +324,7 @@ exports[
     },
     "toc": {
       "type": "NCX",
-      "url": "OEBPS/toc.ncx",
+      "url": "contents.json",
       "children": [
         {
           "label": "Test content",
@@ -380,6 +391,12 @@ exports[
   `tests/onfinalize.test.js TAP upload finalize > epub finalize user/user-123/documents/test-1234/OEBPS/toc.ncx 1`
 ] = `
 Buffer <3c 3f 78 6d 6c 20 76 65 72 73 69 6f 6e 3d 22 31 2e 30 22 20 65 6e 63 6f 64 69 6e 67 3d 22 55 54 46 2d 38 22 20 73 74 61 6e 64 61 6c 6f 6e 65 3d 22 6e 6f 22 3f 3e 0a 3c 21 44 4f 43 54 59 50 45 20 6e 63 78 20 50 55 42 4c 49 43 20 22 2d 2f 2f 4e 49 53 4f 2f 2f 44 54 44 20 6e 63 78 20 32 30 30 35 2d 31 2f 2f 45 4e 22 20 22 68 74 74 70 3a 2f 2f 77 77 77 2e 64 61 69 73 79 2e 6f 72 67 2f 7a 33 39 38 36 2f 32 30 30 35 2f 6e 63 78 2d 32 30 30 35 2d 31 2e 64 74 64 22 3e 0a 0a 3c 6e 63 78 20 78 6d 6c 6e 73 3d 22 68 74 74 70 3a 2f 2f 77 77 77 2e 64 61 69 73 79 2e 6f 72 67 2f 7a 33 39 38 36 2f 32 30 30 35 2f 6e 63 78 2f 22 20 76 65 72 73 69 6f 6e 3d 22 32 30 30 35 2d 31 22 3e 0a 20 20 20 20 3c 68 65 61 64 3e 0a 20 20 20 20 20 20 20 20 3c 6d 65 74 61 20 6e 61 6d 65 3d 22 64 74 62 3a 75 69 64 22 20 63 6f 6e 74 65 6e 74 3d 22 75 72 6e 3a 44 30 42 34 35 32 38 44 2d 41 46 38 30 2d 34 41 37 42 2d 38 31 41 44 2d 42 39 46 30 35 43 32 45 36 39 42 34 22 3e 3c 2f 6d 65 74 61 3e 0a 20 20 20 20 20 20 20 20 3c 6d 65 74 61 20 6e 61 6d 65 3d 22 64 74 62 3a 64 65 70 74 68 22 20 63 6f 6e 74 65 6e 74 3d 22 31 22 3e 3c 2f 6d 65 74 61 3e 0a 20 20 20 20 20 20 20 20 3c 6d 65 74 61 20 6e 61 6d 65 3d 22 64 74 62 3a 74 6f 74 61 6c 50 61 67 65 43 6f 75 6e 74 22 20 63 6f 6e 74 65 6e 74 3d 22 30 22 3e 3c 2f 6d 65 74 61 3e 0a 20 20 20 20 20 20 20 20 3c 6d 65 74 61 20 6e 61 6d 65 3d 22 64 74 62 3a 6d 61 78 50 61 67 65 4e 75 6d 62 65 72 22 20 63 6f 6e 74 65 6e 74 3d 22 30 22 3e 3c 2f 6d 65 74 61 3e 0a 20 20 20 20 3c 2f 68 65 61 64 3e 0a 20 20 20 20 3c 64 6f 63 54 69 74 6c 65 3e 0a 20 20 20 20 20 20 20 20 3c 74 65 78 74 3e 54 65 73 74 20 66 69 6c 65 3c 2f 74 65 78 74 3e 0a 20 20 20 20 3c 2f 64 6f 63 54 69 74 6c 65 3e 0a 20 20 20 20 3c 6e 61 76 4d 61 70 3e 0a 20 20 20 20 20 20 20 20 3c 6e 61 76 50 6f 69 6e 74 20 69 64 3d 22 6e 61 76 50 6f 69 6e 74 2d 32 22 20 70 6c 61 79 4f 72 64 65 72 3d 22 31 22 3e 0a 20 20 20 20 20 20 20 20 20 20 20 20 3c 6e 61 76 4c 61 62 65 6c 3e 0a 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 3c 74 65 78 74 3e 54 65 73 74 20 63 6f 6e 74 65 6e 74 0a 3c 2f 74 65 78 74 3e 0a 20 20 20 20 20 20 20 20 20 20 20 20 3c 2f 6e 61 76 4c 61 62 65 6c 3e 0a 20 20 20 20 20 20 20 20 20 20 20 20 3c 63 6f 6e 74 65 6e 74 20 73 72 63 3d 22 61 66 74 65 72 6d 61 74 68 2e 78 68 74 6d 6c 22 3e 3c 2f 63 6f 6e 74 65 6e 74 3e 0a 20 20 20 20 20 20 20 20 3c 2f 6e 61 76 50 6f 69 6e 74 3e 0a 20 20 20 20 3c 2f 6e 61 76 4d 61 70 3e 0a 3c 2f 6e 63 78 3e>
+`;
+
+exports[
+  `tests/onfinalize.test.js TAP upload finalize > epub finalize user/user-123/documents/test-1234/contents.json 1`
+] = `
+{"type":"NCX","url":"OEBPS/toc.ncx","children":[{"label":"Test content","url":"OEBPS/aftermath.xhtml","children":[]}],"heading":"Test file","inLanguage":"en"}
 `;
 
 exports[
