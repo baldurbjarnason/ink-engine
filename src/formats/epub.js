@@ -169,6 +169,11 @@ async function epub(
           "utf8"
         );
         toc = parseToC(file, resource.url);
+        extract(
+          { contents: JSON.stringify(toc) },
+          Object.assign(toc, { url: "contents.json" }),
+          { contentType: "application/json" }
+        );
       }
       const file = await toVfile.read(path.join(tempDirectory, resource.url));
       urls[resource.url] = await extract(file, resource, {
