@@ -1,7 +1,7 @@
 const tap = require("tap");
 // const process = require("../");
 const Epub = require("../src/formats/EpubProcess");
-const fs = require("fs");
+// const fs = require("fs");
 const path = require("path");
 // const os = require("os");
 
@@ -24,7 +24,10 @@ tap.test("epub process", async test => {
 tap.test("epub process - sanitise false", async test => {
   const processor = new Epub(epubPath, { extract });
   function extract(vfile, resource, metadata) {
-    test.matchSnapshot(vfile.contents, "epub file 2 " + resource.url);
+    test.matchSnapshot(
+      Buffer.from(vfile.contents),
+      "epub file 2 " + resource.url
+    );
     test.matchSnapshot(resource, "epub resource 2 " + resource.url);
     return Promise.resolve("uploaded/" + resource.url);
   }
