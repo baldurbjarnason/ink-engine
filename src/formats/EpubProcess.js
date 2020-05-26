@@ -35,16 +35,10 @@ const JSTYPES = [
 module.exports = class Epub {
   constructor(file, options) {
     this.file = file;
-    const {
-      sanitize = true,
-      cssPrefix = "#ink-engine",
-      extract = function() {},
-      base = "https://www.example.com/"
-    } = options;
+    const { sanitize = true, cssPrefix = "#ink-engine", extract } = options;
     this.extract = extract;
     this.sanitize = sanitize;
     this.cssPrefix = cssPrefix;
-    this.base = base;
     const randomFileName = crypto.randomBytes(15).toString("hex");
     this.tempDirectory = path.join(
       os.tmpdir(),
@@ -101,10 +95,9 @@ module.exports = class Epub {
       encodingFormat: "application/json"
     });
     const contents = {
-      base: this.base,
       contents: result.contents,
       resource,
-      toc: this.contents,
+      toc: this.toc,
       book: this.book
     };
     result.contents = JSON.stringify(contents, null, 2);

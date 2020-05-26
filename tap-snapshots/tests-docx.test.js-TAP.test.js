@@ -11,7 +11,6 @@ Buffer <89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 02 40 00 00 01 80 
 
 exports[`tests/docx.test.js TAP docx process > docx file index.html 1`] = `
 {
-  "base": "https://www.example.com/",
   "contents": {
     "type": "root",
     "children": [

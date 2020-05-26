@@ -24,16 +24,10 @@ const options = {
 module.exports = class Docx {
   constructor(file, options) {
     this.file = file;
-    const {
-      sanitize = true,
-      cssPrefix = "#ink-engine",
-      extract = function() {},
-      base = "https://www.example.com/"
-    } = options;
+    const { sanitize = true, cssPrefix = "#ink-engine", extract } = options;
     this.extract = extract;
     this.sanitize = sanitize;
     this.cssPrefix = cssPrefix;
-    this.base = base;
     const randomFileName = crypto.randomBytes(15).toString("hex");
     this.tempDirectory = path.join(
       os.tmpdir(),
@@ -46,7 +40,6 @@ module.exports = class Docx {
   }
 
   async imageProcess(image) {
-    console.log("processing image");
     const buffer = await image.read();
     const filename = `${++this.counter}.${mime.getExtension(
       image.contentType
@@ -78,7 +71,6 @@ module.exports = class Docx {
       encodingFormat: "application/json"
     });
     const contents = {
-      base: this.base,
       contents: result.contents,
       resource,
       toc: this.contents,
@@ -95,10 +87,6 @@ module.exports = class Docx {
     };
     options.convertImage = mammoth.images.imgElement(imageProcess);
     const html = await mammoth.convertToHtml({ path: this.file }, options);
-    console.log(
-      `------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------`,
-      this.images
-    );
     this.book = {
       name: path.basename(this.file, ".docx"),
       resources: [
@@ -131,7 +119,6 @@ module.exports = class Docx {
     await this.extract(htmlFile, this.book.resources[0], {
       contentType: "text/html"
     });
-    console.log("finished extracting html file");
     const bookFile = vfile({
       contents: JSON.stringify(this.book),
       path: "index.json"

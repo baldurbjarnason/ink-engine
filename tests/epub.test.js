@@ -23,7 +23,8 @@ tap.test("epub process", async test => {
 
 tap.test("epub process - sanitise false", async test => {
   const processor = new Epub(epubPath, { extract });
-  function extract(vfile, resource, metadata) {
+  async function extract(vfile, resource, metadata) {
+    // await writeFile(vfile.contents, resource.url);
     test.matchSnapshot(
       Buffer.from(vfile.contents),
       "epub file 2 " + resource.url
@@ -34,3 +35,10 @@ tap.test("epub process - sanitise false", async test => {
   const result = await processor.process();
   test.matchSnapshot(result, "epub book 2 result");
 });
+
+// async function writeFile(file, url) {
+//   const fullPath = path.join("tests/fixtures/processed-epub", url);
+//   const fullDir = path.dirname(fullPath);
+//   await fs.promises.mkdir(fullDir, { recursive: true });
+//   await fs.promises.writeFile(fullPath, file);
+// }
