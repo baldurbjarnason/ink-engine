@@ -51,7 +51,7 @@ module.exports = async function purifyPreprocess(
     }
   }
   const clean = purify(resourceURL, window);
-  return returnDom ? clean : dom.serialize(clean);
+  return returnDom ? window.document : dom.serialize(clean);
 };
 
 function purify(resourceURL, window) {

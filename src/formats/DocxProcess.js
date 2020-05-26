@@ -6,7 +6,7 @@ const purify = require("../dompurify");
 const util = require("util");
 const rimraf = util.promisify(require("rimraf"));
 const vfile = require("vfile");
-const processor = require('../unified/dom-processor')
+const processor = require("../unified/dom-processor");
 const mime = require("mime");
 const toVfile = require("to-vfile");
 const crypto = require("crypto");
@@ -22,13 +22,18 @@ const options = {
 };
 
 module.exports = class Docx {
-  constructor (file, options) {
-    this.file = file
-    const { sanitize = true, cssPrefix = "#ink-engine", extract = function () {}, base = "https://www.example.com/" } = options
-    this.extract = extract
-    this.sanitize = sanitize
-    this.cssPrefix = cssPrefix
-    this.base = base
+  constructor(file, options) {
+    this.file = file;
+    const {
+      sanitize = true,
+      cssPrefix = "#ink-engine",
+      extract = function() {},
+      base = "https://www.example.com/"
+    } = options;
+    this.extract = extract;
+    this.sanitize = sanitize;
+    this.cssPrefix = cssPrefix;
+    this.base = base;
     const randomFileName = crypto.randomBytes(15).toString("hex");
     this.tempDirectory = path.join(
       os.tmpdir(),
@@ -36,15 +41,20 @@ module.exports = class Docx {
       path.basename(file),
       "/"
     );
-    this.counter = 0
-    this.images = []
+    this.counter = 0;
+    this.images = [];
   }
 
-  
   async imageProcess(image) {
+    console.log("processing image");
     const buffer = await image.read();
-    const filename = `${++this.counter}.${mime.getExtension(image.contentType)}`;
-    await fs.promises.writeFile(path.join(this.tempDirectory, filename), buffer);
+    const filename = `${++this.counter}.${mime.getExtension(
+      image.contentType
+    )}`;
+    await fs.promises.writeFile(
+      path.join(this.tempDirectory, filename),
+      buffer
+    );
     this.images = this.images.concat({
       url: filename,
       rel: [],
@@ -55,11 +65,16 @@ module.exports = class Docx {
     };
   }
 
-  async processMarkup (html, resource) {
-    const clean = await purify(html, resource.url, resource.encodingFormat, true);
-    const result = processor.process(clean)
+  async processMarkup(html, resource) {
+    const clean = await purify(
+      html,
+      resource.url,
+      resource.encodingFormat,
+      true
+    );
+    const result = await processor.process(clean);
     resource = result.data.resource = Object.assign({}, resource, {
-      url: result.data.resource.url + ".json",
+      url: resource.url + ".json",
       encodingFormat: "application/json"
     });
     const contents = {
@@ -68,17 +83,22 @@ module.exports = class Docx {
       resource,
       toc: this.contents,
       book: this.book
-    }
-    result.contents = JSON.stringify(contents, null, 2)
-    return result
+    };
+    result.contents = JSON.stringify(contents, null, 2);
+    return result;
   }
 
-  async process () {
+  async process() {
     await fs.promises.mkdir(this.tempDirectory, { recursive: true });
-    options.convertImage = mammoth.images.imgElement(function(image) {
+    const imageProcess = image => {
       return this.imageProcess(image);
-    });
+    };
+    options.convertImage = mammoth.images.imgElement(imageProcess);
     const html = await mammoth.convertToHtml({ path: this.file }, options);
+    console.log(
+      `------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------`,
+      this.images
+    );
     this.book = {
       name: path.basename(this.file, ".docx"),
       resources: [
@@ -96,9 +116,11 @@ module.exports = class Docx {
         }
       ]
     };
-    const htmlFile = this.processMarkup(wrap(html.value, this.book.name), this.book.resources[0])
+    const htmlFile = await this.processMarkup(
+      wrap(html.value, this.book.name),
+      this.book.resources[0]
+    );
 
-    
     for (const image of this.images) {
       const file = await toVfile.read(path.join(this.tempDirectory, image.url));
       await this.extract(file, image, {
@@ -106,6 +128,10 @@ module.exports = class Docx {
       });
       file.data.resource = image;
     }
+    await this.extract(htmlFile, this.book.resources[0], {
+      contentType: "text/html"
+    });
+    console.log("finished extracting html file");
     const bookFile = vfile({
       contents: JSON.stringify(this.book),
       path: "index.json"
@@ -117,15 +143,11 @@ module.exports = class Docx {
         contentType: "application/json"
       }
     );
-    await this.extract(htmlFile, this.book.resources[0], {
-      contentType: "text/html"
-    });
-    
+
     await rimraf(this.tempDirectory);
     return this.book;
   }
-
-}
+};
 
 function wrap(body, title) {
   return `<!doctype html>

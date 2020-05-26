@@ -1,4 +1,3 @@
-
 const fromDOM = require("hast-util-from-dom");
 
 module.exports = parse;
