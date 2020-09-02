@@ -23,11 +23,13 @@ module.exports = async function purifyPreprocess(
   let dom;
   try {
     dom = new JSDOM(chapter, {
-      contentType
+      contentType,
+      url: "http://localhost"
     });
   } catch (err) {
     dom = new JSDOM(chapter, {
-      contentType: "text/html"
+      contentType: "text/html",
+      url: "http://localhost"
     });
   }
   const window = dom.window;
