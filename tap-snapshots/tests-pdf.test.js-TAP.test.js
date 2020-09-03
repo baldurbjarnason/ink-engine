@@ -6,7 +6,7 @@
  */
 'use strict'
 exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 1`] = `
-{"name":"This Is A Test PDF","resources":[{"url":"index.html","rel":["alternate"],"encodingFormat":"text/html"},{"url":"page0001.svg","rel":[],"encodingFormat":"image/svg+xml"},{"url":"page0002.svg","rel":[],"encodingFormat":"image/svg+xml"},{"url":"page0003.svg","rel":[],"encodingFormat":"image/svg+xml"},{"url":"page0004.svg","rel":[],"encodingFormat":"image/svg+xml"},{"url":"page0005.svg","rel":[],"encodingFormat":"image/svg+xml"},{"url":"page0006.svg","rel":[],"encodingFormat":"image/svg+xml"},{"url":"page0007.svg","rel":[],"encodingFormat":"image/svg+xml"},{"url":"page0008.svg","rel":[],"encodingFormat":"image/svg+xml"}],"readingOrder":[{"url":"index.html","rel":[],"encodingFormat":"text/html"}]}
+{"name":"This Is A Test PDF","resources":[{"url":"index.html","rel":["alternate"],"encodingFormat":"text/html"},{"url":"page0001.svg","rel":[],"encodingFormat":"image/svg+xml"},{"url":"page0002.svg","rel":[],"encodingFormat":"image/svg+xml"},{"url":"page0003.svg","rel":[],"encodingFormat":"image/svg+xml"},{"url":"page0004.svg","rel":[],"encodingFormat":"image/svg+xml"},{"url":"page0005.svg","rel":[],"encodingFormat":"image/svg+xml"},{"url":"page0006.svg","rel":[],"encodingFormat":"image/svg+xml"},{"url":"page0007.svg","rel":[],"encodingFormat":"image/svg+xml"},{"url":"page0008.svg","rel":[],"encodingFormat":"image/svg+xml"}],"readingOrder":[{"url":"index.html","rel":[],"encodingFormat":"text/html"}],"numberOfPages":8}
 `
 
 exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 10`] = `
@@ -95,11 +95,10 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
               },
               {
                 "type": "element",
-                "tagName": "div",
+                "tagName": "ink-page",
                 "properties": {
                   "id": "page1",
-                  "dataPdfPage": "1",
-                  "dataInkLocation": 0
+                  "dataPdfPage": "1"
                 },
                 "children": [
                   {
@@ -112,7 +111,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                       "height": "1683.7796px",
                       "width": "1190.5512px",
                       "xmlns": "http://www.w3.org/2000/svg",
-                      "dataInkLocation": 1
+                      "dataInkLocation": 0
                     },
                     "children": [
                       {
@@ -483,11 +482,10 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
               },
               {
                 "type": "element",
-                "tagName": "div",
+                "tagName": "ink-page",
                 "properties": {
                   "id": "page2",
-                  "dataPdfPage": "2",
-                  "dataInkLocation": 2
+                  "dataPdfPage": "2"
                 },
                 "children": [
                   {
@@ -500,7 +498,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                       "height": "1683.7796px",
                       "width": "1190.5512px",
                       "xmlns": "http://www.w3.org/2000/svg",
-                      "dataInkLocation": 3
+                      "dataInkLocation": 1
                     },
                     "children": [
                       {
@@ -919,11 +917,10 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
               },
               {
                 "type": "element",
-                "tagName": "div",
+                "tagName": "ink-page",
                 "properties": {
                   "id": "page3",
-                  "dataPdfPage": "3",
-                  "dataInkLocation": 4
+                  "dataPdfPage": "3"
                 },
                 "children": [
                   {
@@ -936,7 +933,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                       "height": "1683.7796px",
                       "width": "1190.5512px",
                       "xmlns": "http://www.w3.org/2000/svg",
-                      "dataInkLocation": 5
+                      "dataInkLocation": 2
                     },
                     "children": [
                       {
@@ -1355,11 +1352,10 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
               },
               {
                 "type": "element",
-                "tagName": "div",
+                "tagName": "ink-page",
                 "properties": {
                   "id": "page4",
-                  "dataPdfPage": "4",
-                  "dataInkLocation": 6
+                  "dataPdfPage": "4"
                 },
                 "children": [
                   {
@@ -1372,7 +1368,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                       "height": "1683.7796px",
                       "width": "1190.5512px",
                       "xmlns": "http://www.w3.org/2000/svg",
-                      "dataInkLocation": 7
+                      "dataInkLocation": 3
                     },
                     "children": [
                       {
@@ -1791,11 +1787,10 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
               },
               {
                 "type": "element",
-                "tagName": "div",
+                "tagName": "ink-page",
                 "properties": {
                   "id": "page5",
-                  "dataPdfPage": "5",
-                  "dataInkLocation": 8
+                  "dataPdfPage": "5"
                 },
                 "children": [
                   {
@@ -1808,7 +1803,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                       "height": "1683.7796px",
                       "width": "1190.5512px",
                       "xmlns": "http://www.w3.org/2000/svg",
-                      "dataInkLocation": 9
+                      "dataInkLocation": 4
                     },
                     "children": [
                       {
@@ -2227,11 +2222,10 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
               },
               {
                 "type": "element",
-                "tagName": "div",
+                "tagName": "ink-page",
                 "properties": {
                   "id": "page6",
-                  "dataPdfPage": "6",
-                  "dataInkLocation": 10
+                  "dataPdfPage": "6"
                 },
                 "children": [
                   {
@@ -2244,7 +2238,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                       "height": "1683.7796px",
                       "width": "1190.5512px",
                       "xmlns": "http://www.w3.org/2000/svg",
-                      "dataInkLocation": 11
+                      "dataInkLocation": 5
                     },
                     "children": [
                       {
@@ -2663,11 +2657,10 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
               },
               {
                 "type": "element",
-                "tagName": "div",
+                "tagName": "ink-page",
                 "properties": {
                   "id": "page7",
-                  "dataPdfPage": "7",
-                  "dataInkLocation": 12
+                  "dataPdfPage": "7"
                 },
                 "children": [
                   {
@@ -2680,7 +2673,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                       "height": "1683.7796px",
                       "width": "1190.5512px",
                       "xmlns": "http://www.w3.org/2000/svg",
-                      "dataInkLocation": 13
+                      "dataInkLocation": 6
                     },
                     "children": [
                       {
@@ -3115,11 +3108,10 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
               },
               {
                 "type": "element",
-                "tagName": "div",
+                "tagName": "ink-page",
                 "properties": {
                   "id": "page8",
-                  "dataPdfPage": "8",
-                  "dataInkLocation": 14
+                  "dataPdfPage": "8"
                 },
                 "children": [
                   {
@@ -3132,7 +3124,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                       "height": "1683.7796px",
                       "width": "1190.5512px",
                       "xmlns": "http://www.w3.org/2000/svg",
-                      "dataInkLocation": 15
+                      "dataInkLocation": 7
                     },
                     "children": [
                       {
@@ -3283,7 +3275,8 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
         "rel": [],
         "encodingFormat": "text/html"
       }
-    ]
+    ],
+    "numberOfPages": 8
   }
 }
 `

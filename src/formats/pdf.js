@@ -4,14 +4,20 @@ const purify = require("../dompurify");
 // domstubs.js is an APACHE licensed file from Mozilla's SVG generation for PDF.js example.
 require("./domstubs.js").setStubs(global);
 const pdfjsLib = require("pdfjs-dist/es5/build/pdf.js");
+const path = require("path");
+const fs = require("fs");
 
 // Some PDFs need external cmaps.
 const CMAP_URL = "../../node_modules/pdfjs-dist/cmaps/";
 const CMAP_PACKED = true;
 
 // We need to add json processing, toc-creation (use # links to page ids), and book creation to this.
-module.exports = async function*(data, filename) {
-  data = new Uint8Array(data);
+module.exports = async function*({ data, filename }) {
+  if (data) {
+    data = new Uint8Array(data);
+  } else {
+    data = new Uint8Array(await fs.promises.readFile(filename));
+  }
   const doc = await pdfjsLib.getDocument({
     data: data,
     cMapUrl: CMAP_URL,
@@ -21,14 +27,13 @@ module.exports = async function*(data, filename) {
   const numPages = doc.numPages;
 
   const information = await doc.getMetadata();
-  console.dir(information);
   let name;
   if (information.info.Title) {
     name = information.info.Title;
   } else if (information.metadata && information.metadata.get("dc:title")) {
     name = information.metadata.get("dc:title");
   } else if (filename) {
-    name = filename;
+    name = path.basename(filename);
   } else {
     name = "PDF";
   }
@@ -42,6 +47,7 @@ module.exports = async function*(data, filename) {
   }
 
   const book = getBook(name, images);
+  book.numberOfPages = numPages;
   yield vfile({
     contents: JSON.stringify(book),
     contentType: "application/json",
@@ -106,7 +112,7 @@ async function getPageText(page, viewport, path) {
       style.fontFamily
     }" fill="transparent" font-size="0.95">${textItem.str}</text>`;
   });
-  return `<div data-pdf-page="${page.pageNumber}" id="page${
+  return `<ink-page data-pdf-page="${page.pageNumber}" id="page${
     page.pageNumber
   }"><svg xmlns="http://www.w3.org/2000/svg" width="${
     viewport.width
@@ -115,7 +121,7 @@ async function getPageText(page, viewport, path) {
   } ${viewport.height}" font-size="1">
   <image href="${path}" height="${viewport.height}" width="${viewport.width}"/>
   ${text.join("")}
-  </svg></div>
+  </svg></ink-page>
   `;
 }
 function wrap(body, title) {
