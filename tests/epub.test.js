@@ -1,15 +1,14 @@
 const tap = require("tap");
-// const process = require("../");
-const epub = require("../src/formats/epub");
+const epub = require("../src/formats/");
 const fs = require("fs");
 const path = require("path");
-// const os = require("os");
 
 const epubPath = path.join(__dirname, "fixtures/moby-dick.epub");
 
 tap.test("epub process", async test => {
   for await (const vfile of epub({
-    data: fs.readFileSync(path.join(__dirname, "fixtures/test-epub-js.epub"))
+    data: fs.readFileSync(path.join(__dirname, "fixtures/test-epub-js.epub")),
+    mediaType: "application/epub+zip"
   })) {
     if (!vfile.data) {
       test.matchSnapshot(vfile, "epub book result");
@@ -25,7 +24,8 @@ tap.test("epub process", async test => {
 
 tap.test("epub process - sanitise false", async test => {
   for await (const vfile of epub({
-    filename: epubPath
+    filename: epubPath,
+    mediaType: "application/epub+zip"
   })) {
     if (!vfile.data) {
       test.matchSnapshot(vfile, "epub book 2 result");

@@ -1,15 +1,10 @@
-const fs = require("fs");
 const purify = require("../dompurify");
 const vfile = require("vfile");
 const processor = require("../unified/dom-processor");
 const path = require("path");
 
 module.exports = async function*(options) {
-  const { fragment = false, filename = "HTML" } = options;
-  let data;
-  if (!data) {
-    data = await fs.promises.readFile(filename);
-  }
+  const { fragment = false, filename = "HTML", data } = options;
 
   const book = {
     name: path.basename(filename, ".html"),

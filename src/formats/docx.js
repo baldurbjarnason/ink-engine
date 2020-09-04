@@ -22,16 +22,9 @@ const mammothOptions = {
 };
 
 module.exports = async function*(options) {
-  const { data } = options;
+  const { filename } = options;
   const randomFileName = crypto.randomBytes(15).toString("hex");
   const tempRoot = path.join(os.tmpdir(), randomFileName, "/");
-  let filename;
-  if (!options.filename) {
-    filename = path.join(tempRoot, "original.docx");
-    await fs.promises.writeFile(filename, data);
-  } else {
-    filename = options.filename;
-  }
   const tempDirectory = path.join(
     tempRoot,
     path.basename(filename, ".docx"),

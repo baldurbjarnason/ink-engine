@@ -1,6 +1,5 @@
 const tap = require("tap");
-const docx = require("../src/formats/docx");
-// const fs = require("fs");
+const docx = require("../src/formats/");
 const path = require("path");
 const os = require("os");
 
@@ -14,7 +13,8 @@ const docxPath = path.join(__dirname, "fixtures/test.docx");
 
 tap.test("docx process", async test => {
   for await (const vfile of docx({
-    filename: docxPath
+    filename: docxPath,
+    mediaType: "docx"
   })) {
     if (!vfile.data) {
       test.matchSnapshot(vfile, "docx first result");

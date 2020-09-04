@@ -1,7 +1,6 @@
 const fs = require("fs");
 const unzip = require("unzipper");
 const path = require("path");
-const os = require("os");
 const parseOPF = require("./opf.js");
 const purify = require("../dompurify");
 const util = require("util");
@@ -10,7 +9,6 @@ const processCSS = require("../postcss");
 const parseToC = require("./epub-nav");
 const toVfile = require("to-vfile");
 const vfile = require("vfile");
-const crypto = require("crypto");
 const processor = require("../unified/dom-processor");
 
 const JSTYPES = [
@@ -34,17 +32,7 @@ const JSTYPES = [
 
 module.exports = async function*(options) {
   // Currently we always sanitize markup and CSS and skip JS files. This may change in the future
-  const { cssPrefix = "#ink-engine", data } = options;
-  const randomFileName = crypto.randomBytes(15).toString("hex");
-  const tempRoot = path.join(os.tmpdir(), randomFileName, "/");
-  await fs.promises.mkdir(tempRoot, { recursive: true });
-  let filename;
-  if (!options.filename) {
-    filename = path.join(tempRoot, "original.epub");
-    await fs.promises.writeFile(filename, data);
-  } else {
-    filename = options.filename;
-  }
+  const { cssPrefix = "#ink-engine", filename, tempRoot } = options;
   const tempDirectory = path.join(
     tempRoot,
     path.basename(filename, ".epub"),

@@ -1,5 +1,5 @@
 const tap = require("tap");
-const markup = require("../src/formats/markup");
+const markup = require("../src/formats/");
 const path = require("path");
 const os = require("os");
 const fs = require("fs");
@@ -15,7 +15,8 @@ const fragmentPath = path.join(__dirname, "fixtures/test-markup-fragment.html");
 
 tap.test("MarkupProcess", async test => {
   for await (const vfile of markup({
-    filename: markupPath
+    filename: markupPath,
+    mediaType: "text/html"
   })) {
     if (!vfile.data) {
       test.matchSnapshot(vfile, "markup first result");
@@ -32,7 +33,8 @@ tap.test("MarkupProcess fragment", async test => {
   for await (const vfile of markup({
     fragment: true,
     data: fs.readFileSync(fragmentPath),
-    filename: fragmentPath
+    filename: fragmentPath,
+    mediaType: "text/html"
   })) {
     if (!vfile.data) {
       test.matchSnapshot(vfile, "markup first result");

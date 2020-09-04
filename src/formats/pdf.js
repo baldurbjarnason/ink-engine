@@ -5,21 +5,15 @@ const purify = require("../dompurify");
 require("./domstubs.js").setStubs(global);
 const pdfjsLib = require("pdfjs-dist/es5/build/pdf.js");
 const path = require("path");
-const fs = require("fs");
 
 // Some PDFs need external cmaps.
 const CMAP_URL = "../../node_modules/pdfjs-dist/cmaps/";
 const CMAP_PACKED = true;
 
 // We need to add json processing, toc-creation (use # links to page ids), and book creation to this.
-module.exports = async function*({ data, filename }) {
-  if (data) {
-    data = new Uint8Array(data);
-  } else {
-    data = new Uint8Array(await fs.promises.readFile(filename));
-  }
+module.exports = async function*({ data, filename = "PDF.pdf" }) {
   const doc = await pdfjsLib.getDocument({
-    data: data,
+    data: new Uint8Array(data),
     cMapUrl: CMAP_URL,
     cMapPacked: CMAP_PACKED,
     fontExtraProperties: true
@@ -27,15 +21,9 @@ module.exports = async function*({ data, filename }) {
   const numPages = doc.numPages;
 
   const information = await doc.getMetadata();
-  let name;
+  let name = path.basename(filename);
   if (information.info.Title) {
     name = information.info.Title;
-  } else if (information.metadata && information.metadata.get("dc:title")) {
-    name = information.metadata.get("dc:title");
-  } else if (filename) {
-    name = path.basename(filename);
-  } else {
-    name = "PDF";
   }
   const images = [];
   for (let index = 0; index < numPages; index++) {
