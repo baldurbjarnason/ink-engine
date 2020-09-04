@@ -1,3 +1,3 @@
 const formats = require("./src/formats");
 
-module.exports = formats
+module.exports = formats;

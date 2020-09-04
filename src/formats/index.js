@@ -6,11 +6,15 @@ const path = require("path");
 const os = require("os");
 const crypto = require("crypto");
 const fs = require("fs");
+const sharp = require("sharp");
+const THUMBSIZE = Number.parseInt(process.env.THUMBSIZE, 10);
+const THUMBPATH = process.env.THUMBPATH;
+const vfile = require("vfile");
 
 const PREFERSDATA = [pdf, markup];
 // const PREFERSPATH = [docx, epub]
 
-async function* process(options) {
+async function* processor(options) {
   let processor;
   let suffix;
   switch (options.mediaType) {
@@ -48,7 +52,29 @@ async function* process(options) {
     await fs.promises.writeFile(options.filename, data);
   }
   // We probably should iterate over the processor here and create thumbnails
-  yield* processor(options);
+  // yield* processor(options);
+  for await (const file of processor(options)) {
+    if (
+      file.contentType &&
+      file.contentType.includes("image") &&
+      options.thumbnails
+    ) {
+      const thumb = await sharp(file.contents)
+        .resize(THUMBSIZE, THUMBSIZE, { fit: "inside" })
+        .jpeg({ quality: 60 })
+        .toBuffer();
+      const thumbPath = path.join(THUMBPATH, file.path);
+      const thumbFile = vfile({
+        contents: thumb,
+        contentType: "image/jpeg",
+        path: thumbPath
+      });
+      yield file;
+      yield thumbFile;
+    } else {
+      yield file;
+    }
+  }
 }
 
-module.exports = process;
+module.exports = processor;
