@@ -758,7 +758,23 @@ exports[`tests/docx.test.js TAP docx process > docx file index.html.json 1`] = `
         ]
       }
     ],
-    "data": {}
+    "data": {
+      "headings": [
+        {
+          "label": "Test File: Sub title to text file",
+          "level": 1,
+          "url": "#test-file-sub-title-to-text-file",
+          "children": [
+            {
+              "label": "Works Cited",
+              "level": 2,
+              "url": "#works-cited",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
   },
   "resource": {
     "url": "index.html.json",

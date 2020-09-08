@@ -785,7 +785,16 @@ exports[`tests/markup.test.js TAP MarkupProcess > markup file index.html.json 1`
         ]
       }
     ],
-    "data": {}
+    "data": {
+      "headings": [
+        {
+          "label": "Chapter 1. Loomings.",
+          "level": 1,
+          "url": "#chapter-1-loomings",
+          "children": []
+        }
+      ]
+    }
   },
   "resource": {
     "url": "index.html.json",
@@ -1686,7 +1695,16 @@ exports[`tests/markup.test.js TAP MarkupProcess fragment > markup file index.htm
         ]
       }
     ],
-    "data": {}
+    "data": {
+      "headings": [
+        {
+          "label": "Chapter 1. Loomings.",
+          "level": 1,
+          "url": "#chapter-1-loomings",
+          "children": []
+        }
+      ]
+    }
   },
   "resource": {
     "url": "index.html.json",

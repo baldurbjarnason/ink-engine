@@ -108,7 +108,7 @@ async function getPageText(page, viewport, filepath) {
     THUMBPATH,
     filepath
   )}.jpg" alt="" height="${THUMBSIZE / 2}"><span  data-ink-page-number>Page ${
-    page.pagenumber
+    page.pageNumber
   }</span></h2><svg xmlns="http://www.w3.org/2000/svg" width="${
     viewport.width
   }px" height="${viewport.height}px" preserveAspectRatio="none" viewBox="0 0 ${

@@ -125,7 +125,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                     "tagName": "h2",
                     "properties": {
                       "dataInkPageHeader": "",
-                      "id": "page-undefined",
+                      "id": "page-1",
                       "dataInkLocation": 1
                     },
                     "children": [
@@ -148,7 +148,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "children": [
                           {
                             "type": "text",
-                            "value": "Page undefined"
+                            "value": "Page 1"
                           }
                         ]
                       }
@@ -546,7 +546,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                     "tagName": "h2",
                     "properties": {
                       "dataInkPageHeader": "",
-                      "id": "page-undefined-1",
+                      "id": "page-2",
                       "dataInkLocation": 3
                     },
                     "children": [
@@ -569,7 +569,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "children": [
                           {
                             "type": "text",
-                            "value": "Page undefined"
+                            "value": "Page 2"
                           }
                         ]
                       }
@@ -1015,7 +1015,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                     "tagName": "h2",
                     "properties": {
                       "dataInkPageHeader": "",
-                      "id": "page-undefined-2",
+                      "id": "page-3",
                       "dataInkLocation": 5
                     },
                     "children": [
@@ -1038,7 +1038,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "children": [
                           {
                             "type": "text",
-                            "value": "Page undefined"
+                            "value": "Page 3"
                           }
                         ]
                       }
@@ -1484,7 +1484,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                     "tagName": "h2",
                     "properties": {
                       "dataInkPageHeader": "",
-                      "id": "page-undefined-3",
+                      "id": "page-4",
                       "dataInkLocation": 7
                     },
                     "children": [
@@ -1507,7 +1507,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "children": [
                           {
                             "type": "text",
-                            "value": "Page undefined"
+                            "value": "Page 4"
                           }
                         ]
                       }
@@ -1953,7 +1953,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                     "tagName": "h2",
                     "properties": {
                       "dataInkPageHeader": "",
-                      "id": "page-undefined-4",
+                      "id": "page-5",
                       "dataInkLocation": 9
                     },
                     "children": [
@@ -1976,7 +1976,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "children": [
                           {
                             "type": "text",
-                            "value": "Page undefined"
+                            "value": "Page 5"
                           }
                         ]
                       }
@@ -2422,7 +2422,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                     "tagName": "h2",
                     "properties": {
                       "dataInkPageHeader": "",
-                      "id": "page-undefined-5",
+                      "id": "page-6",
                       "dataInkLocation": 11
                     },
                     "children": [
@@ -2445,7 +2445,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "children": [
                           {
                             "type": "text",
-                            "value": "Page undefined"
+                            "value": "Page 6"
                           }
                         ]
                       }
@@ -2891,7 +2891,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                     "tagName": "h2",
                     "properties": {
                       "dataInkPageHeader": "",
-                      "id": "page-undefined-6",
+                      "id": "page-7",
                       "dataInkLocation": 13
                     },
                     "children": [
@@ -2914,7 +2914,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "children": [
                           {
                             "type": "text",
-                            "value": "Page undefined"
+                            "value": "Page 7"
                           }
                         ]
                       }
@@ -3376,7 +3376,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                     "tagName": "h2",
                     "properties": {
                       "dataInkPageHeader": "",
-                      "id": "page-undefined-7",
+                      "id": "page-8",
                       "dataInkLocation": 15
                     },
                     "children": [
@@ -3399,7 +3399,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "children": [
                           {
                             "type": "text",
-                            "value": "Page undefined"
+                            "value": "Page 8"
                           }
                         ]
                       }
@@ -3449,7 +3449,65 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
         ]
       }
     ],
-    "data": {}
+    "data": {
+      "headings": [
+        {
+          "label": "This Is A Test PDF",
+          "level": 1,
+          "url": "#this-is-a-test-pdf",
+          "children": [
+            {
+              "label": "Page 1",
+              "level": 2,
+              "url": "#page-1",
+              "children": []
+            },
+            {
+              "label": "Page 2",
+              "level": 2,
+              "url": "#page-2",
+              "children": []
+            },
+            {
+              "label": "Page 3",
+              "level": 2,
+              "url": "#page-3",
+              "children": []
+            },
+            {
+              "label": "Page 4",
+              "level": 2,
+              "url": "#page-4",
+              "children": []
+            },
+            {
+              "label": "Page 5",
+              "level": 2,
+              "url": "#page-5",
+              "children": []
+            },
+            {
+              "label": "Page 6",
+              "level": 2,
+              "url": "#page-6",
+              "children": []
+            },
+            {
+              "label": "Page 7",
+              "level": 2,
+              "url": "#page-7",
+              "children": []
+            },
+            {
+              "label": "Page 8",
+              "level": 2,
+              "url": "#page-8",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
   },
   "resource": {
     "url": "index.html",
