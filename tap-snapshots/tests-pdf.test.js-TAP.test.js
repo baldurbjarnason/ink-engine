@@ -95,12 +95,65 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
               },
               {
                 "type": "element",
+                "tagName": "h1",
+                "properties": {
+                  "dataInkPageTitle": "",
+                  "id": "this-is-a-test-pdf",
+                  "dataInkLocation": 0
+                },
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "This Is A Test PDF"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "value": "\\n  "
+              },
+              {
+                "type": "element",
                 "tagName": "ink-page",
                 "properties": {
                   "id": "page1",
                   "dataPdfPage": "1"
                 },
                 "children": [
+                  {
+                    "type": "element",
+                    "tagName": "h2",
+                    "properties": {
+                      "dataInkPageHeader": "",
+                      "id": "page-undefined",
+                      "dataInkLocation": 1
+                    },
+                    "children": [
+                      {
+                        "type": "element",
+                        "tagName": "img",
+                        "properties": {
+                          "height": 200,
+                          "alt": "",
+                          "src": "thumbnails/page0001.svg.jpg"
+                        },
+                        "children": []
+                      },
+                      {
+                        "type": "element",
+                        "tagName": "span",
+                        "properties": {
+                          "dataInkPageNumber": ""
+                        },
+                        "children": [
+                          {
+                            "type": "text",
+                            "value": "Page undefined"
+                          }
+                        ]
+                      }
+                    ]
+                  },
                   {
                     "type": "element",
                     "tagName": "svg",
@@ -111,7 +164,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                       "height": "1683.7796px",
                       "width": "1190.5512px",
                       "xmlns": "http://www.w3.org/2000/svg",
-                      "dataInkLocation": 0
+                      "dataInkLocation": 2
                     },
                     "children": [
                       {
@@ -490,6 +543,40 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                 "children": [
                   {
                     "type": "element",
+                    "tagName": "h2",
+                    "properties": {
+                      "dataInkPageHeader": "",
+                      "id": "page-undefined-1",
+                      "dataInkLocation": 3
+                    },
+                    "children": [
+                      {
+                        "type": "element",
+                        "tagName": "img",
+                        "properties": {
+                          "height": 200,
+                          "alt": "",
+                          "src": "thumbnails/page0002.svg.jpg"
+                        },
+                        "children": []
+                      },
+                      {
+                        "type": "element",
+                        "tagName": "span",
+                        "properties": {
+                          "dataInkPageNumber": ""
+                        },
+                        "children": [
+                          {
+                            "type": "text",
+                            "value": "Page undefined"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
                     "tagName": "svg",
                     "properties": {
                       "fontSize": "1",
@@ -498,7 +585,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                       "height": "1683.7796px",
                       "width": "1190.5512px",
                       "xmlns": "http://www.w3.org/2000/svg",
-                      "dataInkLocation": 1
+                      "dataInkLocation": 4
                     },
                     "children": [
                       {
@@ -925,6 +1012,40 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                 "children": [
                   {
                     "type": "element",
+                    "tagName": "h2",
+                    "properties": {
+                      "dataInkPageHeader": "",
+                      "id": "page-undefined-2",
+                      "dataInkLocation": 5
+                    },
+                    "children": [
+                      {
+                        "type": "element",
+                        "tagName": "img",
+                        "properties": {
+                          "height": 200,
+                          "alt": "",
+                          "src": "thumbnails/page0003.svg.jpg"
+                        },
+                        "children": []
+                      },
+                      {
+                        "type": "element",
+                        "tagName": "span",
+                        "properties": {
+                          "dataInkPageNumber": ""
+                        },
+                        "children": [
+                          {
+                            "type": "text",
+                            "value": "Page undefined"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
                     "tagName": "svg",
                     "properties": {
                       "fontSize": "1",
@@ -933,7 +1054,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                       "height": "1683.7796px",
                       "width": "1190.5512px",
                       "xmlns": "http://www.w3.org/2000/svg",
-                      "dataInkLocation": 2
+                      "dataInkLocation": 6
                     },
                     "children": [
                       {
@@ -1360,6 +1481,40 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                 "children": [
                   {
                     "type": "element",
+                    "tagName": "h2",
+                    "properties": {
+                      "dataInkPageHeader": "",
+                      "id": "page-undefined-3",
+                      "dataInkLocation": 7
+                    },
+                    "children": [
+                      {
+                        "type": "element",
+                        "tagName": "img",
+                        "properties": {
+                          "height": 200,
+                          "alt": "",
+                          "src": "thumbnails/page0004.svg.jpg"
+                        },
+                        "children": []
+                      },
+                      {
+                        "type": "element",
+                        "tagName": "span",
+                        "properties": {
+                          "dataInkPageNumber": ""
+                        },
+                        "children": [
+                          {
+                            "type": "text",
+                            "value": "Page undefined"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
                     "tagName": "svg",
                     "properties": {
                       "fontSize": "1",
@@ -1368,7 +1523,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                       "height": "1683.7796px",
                       "width": "1190.5512px",
                       "xmlns": "http://www.w3.org/2000/svg",
-                      "dataInkLocation": 3
+                      "dataInkLocation": 8
                     },
                     "children": [
                       {
@@ -1795,6 +1950,40 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                 "children": [
                   {
                     "type": "element",
+                    "tagName": "h2",
+                    "properties": {
+                      "dataInkPageHeader": "",
+                      "id": "page-undefined-4",
+                      "dataInkLocation": 9
+                    },
+                    "children": [
+                      {
+                        "type": "element",
+                        "tagName": "img",
+                        "properties": {
+                          "height": 200,
+                          "alt": "",
+                          "src": "thumbnails/page0005.svg.jpg"
+                        },
+                        "children": []
+                      },
+                      {
+                        "type": "element",
+                        "tagName": "span",
+                        "properties": {
+                          "dataInkPageNumber": ""
+                        },
+                        "children": [
+                          {
+                            "type": "text",
+                            "value": "Page undefined"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
                     "tagName": "svg",
                     "properties": {
                       "fontSize": "1",
@@ -1803,7 +1992,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                       "height": "1683.7796px",
                       "width": "1190.5512px",
                       "xmlns": "http://www.w3.org/2000/svg",
-                      "dataInkLocation": 4
+                      "dataInkLocation": 10
                     },
                     "children": [
                       {
@@ -2230,6 +2419,40 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                 "children": [
                   {
                     "type": "element",
+                    "tagName": "h2",
+                    "properties": {
+                      "dataInkPageHeader": "",
+                      "id": "page-undefined-5",
+                      "dataInkLocation": 11
+                    },
+                    "children": [
+                      {
+                        "type": "element",
+                        "tagName": "img",
+                        "properties": {
+                          "height": 200,
+                          "alt": "",
+                          "src": "thumbnails/page0006.svg.jpg"
+                        },
+                        "children": []
+                      },
+                      {
+                        "type": "element",
+                        "tagName": "span",
+                        "properties": {
+                          "dataInkPageNumber": ""
+                        },
+                        "children": [
+                          {
+                            "type": "text",
+                            "value": "Page undefined"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
                     "tagName": "svg",
                     "properties": {
                       "fontSize": "1",
@@ -2238,7 +2461,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                       "height": "1683.7796px",
                       "width": "1190.5512px",
                       "xmlns": "http://www.w3.org/2000/svg",
-                      "dataInkLocation": 5
+                      "dataInkLocation": 12
                     },
                     "children": [
                       {
@@ -2665,6 +2888,40 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                 "children": [
                   {
                     "type": "element",
+                    "tagName": "h2",
+                    "properties": {
+                      "dataInkPageHeader": "",
+                      "id": "page-undefined-6",
+                      "dataInkLocation": 13
+                    },
+                    "children": [
+                      {
+                        "type": "element",
+                        "tagName": "img",
+                        "properties": {
+                          "height": 200,
+                          "alt": "",
+                          "src": "thumbnails/page0007.svg.jpg"
+                        },
+                        "children": []
+                      },
+                      {
+                        "type": "element",
+                        "tagName": "span",
+                        "properties": {
+                          "dataInkPageNumber": ""
+                        },
+                        "children": [
+                          {
+                            "type": "text",
+                            "value": "Page undefined"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
                     "tagName": "svg",
                     "properties": {
                       "fontSize": "1",
@@ -2673,7 +2930,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                       "height": "1683.7796px",
                       "width": "1190.5512px",
                       "xmlns": "http://www.w3.org/2000/svg",
-                      "dataInkLocation": 6
+                      "dataInkLocation": 14
                     },
                     "children": [
                       {
@@ -3116,6 +3373,40 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                 "children": [
                   {
                     "type": "element",
+                    "tagName": "h2",
+                    "properties": {
+                      "dataInkPageHeader": "",
+                      "id": "page-undefined-7",
+                      "dataInkLocation": 15
+                    },
+                    "children": [
+                      {
+                        "type": "element",
+                        "tagName": "img",
+                        "properties": {
+                          "height": 200,
+                          "alt": "",
+                          "src": "thumbnails/page0008.svg.jpg"
+                        },
+                        "children": []
+                      },
+                      {
+                        "type": "element",
+                        "tagName": "span",
+                        "properties": {
+                          "dataInkPageNumber": ""
+                        },
+                        "children": [
+                          {
+                            "type": "text",
+                            "value": "Page undefined"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
                     "tagName": "svg",
                     "properties": {
                       "fontSize": "1",
@@ -3124,7 +3415,7 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                       "height": "1683.7796px",
                       "width": "1190.5512px",
                       "xmlns": "http://www.w3.org/2000/svg",
-                      "dataInkLocation": 7
+                      "dataInkLocation": 16
                     },
                     "children": [
                       {

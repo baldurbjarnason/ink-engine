@@ -10,6 +10,7 @@ const sharp = require("sharp");
 const THUMBSIZE = Number.parseInt(process.env.THUMBSIZE, 10);
 const THUMBPATH = process.env.THUMBPATH;
 const vfile = require("vfile");
+const util = require("util");
 const rimraf = util.promisify(require("rimraf"));
 
 const PREFERSDATA = [pdf, markup];
@@ -52,8 +53,8 @@ async function* processor(options) {
     options.filename = path.join(options.tempRoot, "original" + suffix);
     await fs.promises.writeFile(options.filename, data);
   }
-  // We probably should iterate over the processor here and create thumbnails
-  // yield* processor(options);
+  // For paginated formats where the pages are images included in order (PDF now, CBZ/CBR later) we should build a contents file out of the included image thumbnails.
+  let thumbPaths = [];
   for await (const file of processor(options)) {
     if (
       file.contentType &&
@@ -64,7 +65,8 @@ async function* processor(options) {
         .resize(THUMBSIZE, THUMBSIZE, { fit: "inside" })
         .jpeg({ quality: 60 })
         .toBuffer();
-      const thumbPath = path.join(THUMBPATH, file.path);
+      const thumbPath = `${path.join(THUMBPATH, file.path)}.jpg`;
+      thumbPaths = thumbPaths.concat(thumbPath);
       const thumbFile = vfile({
         contents: thumb,
         contentType: "image/jpeg",
@@ -76,6 +78,9 @@ async function* processor(options) {
       yield file;
     }
   }
+  // Here we need to process the toc.
+  // If Paginated, turn thumbnail list into contents
+  // If single file and no toc, turn resource for main readingOrder into toc
   await rimraf(options.tempRoot);
 }
 

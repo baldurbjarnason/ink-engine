@@ -5,6 +5,8 @@ const purify = require("../dompurify");
 require("./domstubs.js").setStubs(global);
 const pdfjsLib = require("pdfjs-dist/es5/build/pdf.js");
 const path = require("path");
+const THUMBSIZE = Number.parseInt(process.env.THUMBSIZE, 10);
+const THUMBPATH = process.env.THUMBPATH;
 
 // Some PDFs need external cmaps.
 const CMAP_URL = "../../node_modules/pdfjs-dist/cmaps/";
@@ -86,7 +88,7 @@ function getFileNameForPage(pageNum) {
   return `page${pageNum.padStart(4, "0")}.svg`;
 }
 
-async function getPageText(page, viewport, path) {
+async function getPageText(page, viewport, filepath) {
   const textContent = await page.getTextContent();
   const text = textContent.items.map(textItem => {
     // we have to take in account viewport transform, which includes scale,
@@ -102,12 +104,19 @@ async function getPageText(page, viewport, path) {
   });
   return `<ink-page data-pdf-page="${page.pageNumber}" id="page${
     page.pageNumber
-  }"><svg xmlns="http://www.w3.org/2000/svg" width="${
+  }"><h2 data-ink-page-header><img src="${path.join(
+    THUMBPATH,
+    filepath
+  )}.jpg" alt="" height="${THUMBSIZE / 2}"><span  data-ink-page-number>Page ${
+    page.pagenumber
+  }</span></h2><svg xmlns="http://www.w3.org/2000/svg" width="${
     viewport.width
   }px" height="${viewport.height}px" preserveAspectRatio="none" viewBox="0 0 ${
     viewport.width
   } ${viewport.height}" font-size="1">
-  <image href="${path}" height="${viewport.height}" width="${viewport.width}"/>
+  <image href="${filepath}" height="${viewport.height}" width="${
+    viewport.width
+  }"/>
   ${text.join("")}
   </svg></ink-page>
   `;
@@ -125,6 +134,7 @@ function wrap(body, title) {
     </style>
   </head>
   <body id="pdf-body">
+  <h1 data-ink-page-title>${title}</h1>
   ${body}
   </body>
   </html>
