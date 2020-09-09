@@ -53,8 +53,6 @@ async function* processor(options) {
     options.filename = path.join(options.tempRoot, "original" + suffix);
     await fs.promises.writeFile(options.filename, data);
   }
-  // For paginated formats where the pages are images included in order (PDF now, CBZ/CBR later) we should build a contents file out of the included image thumbnails.
-  let thumbPaths = [];
   for await (const file of processor(options)) {
     if (
       file.contentType &&
@@ -66,7 +64,6 @@ async function* processor(options) {
         .jpeg({ quality: 60 })
         .toBuffer();
       const thumbPath = `${path.join(THUMBPATH, file.path)}.jpg`;
-      thumbPaths = thumbPaths.concat(thumbPath);
       const thumbFile = vfile({
         contents: thumb,
         contentType: "image/jpeg",
@@ -78,9 +75,6 @@ async function* processor(options) {
       yield file;
     }
   }
-  // Here we need to process the toc.
-  // If Paginated, turn thumbnail list into contents
-  // If single file and no toc, turn resource for main readingOrder into toc
   await rimraf(options.tempRoot);
 }
 

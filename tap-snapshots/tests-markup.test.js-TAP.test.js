@@ -6,7 +6,7 @@
  */
 'use strict'
 exports[`tests/markup.test.js TAP MarkupProcess > markup file contents.json 1`] = `
-{"heading":"test-markup Contents","type":"Markup","children":[{"children":[],"label":"test-markup","url":"index.html"}]}
+{"type":"Headings","heading":"Chapter 1. Loomings.","children":[{"label":"Chapter 1. Loomings.","level":1,"url":"#chapter-1-loomings","children":[]}],"url":"contents.json"}
 `
 
 exports[`tests/markup.test.js TAP MarkupProcess > markup file index.html.json 1`] = `
@@ -804,13 +804,14 @@ exports[`tests/markup.test.js TAP MarkupProcess > markup file index.html.json 1`
     "encodingFormat": "application/json"
   },
   "toc": {
-    "heading": "test-markup Contents",
-    "type": "Markup",
+    "type": "Headings",
+    "heading": "Chapter 1. Loomings.",
     "children": [
       {
-        "children": [],
-        "label": "test-markup",
-        "url": "index.html"
+        "label": "Chapter 1. Loomings.",
+        "level": 1,
+        "url": "#chapter-1-loomings",
+        "children": []
       }
     ],
     "url": "contents.json"
@@ -868,12 +869,13 @@ Object {
   "children": Array [
     Object {
       "children": Array [],
-      "label": "test-markup",
-      "url": "index.html",
+      "label": "Chapter 1. Loomings.",
+      "level": 1,
+      "url": "#chapter-1-loomings",
     },
   ],
-  "heading": "test-markup Contents",
-  "type": "Markup",
+  "heading": "Chapter 1. Loomings.",
+  "type": "Headings",
   "url": "contents.json",
 }
 `
@@ -912,7 +914,7 @@ Object {
 `
 
 exports[`tests/markup.test.js TAP MarkupProcess fragment > markup file contents.json 1`] = `
-{"heading":"test-markup-fragment Contents","type":"Markup","children":[{"children":[],"label":"test-markup-fragment","url":"index.html"}]}
+{"type":"Headings","heading":"Chapter 1. Loomings.","children":[{"label":"Chapter 1. Loomings.","level":1,"url":"#chapter-1-loomings","children":[]}],"url":"contents.json"}
 `
 
 exports[`tests/markup.test.js TAP MarkupProcess fragment > markup file index.html.json 1`] = `
@@ -1714,13 +1716,14 @@ exports[`tests/markup.test.js TAP MarkupProcess fragment > markup file index.htm
     "encodingFormat": "application/json"
   },
   "toc": {
-    "heading": "test-markup-fragment Contents",
-    "type": "Markup",
+    "type": "Headings",
+    "heading": "Chapter 1. Loomings.",
     "children": [
       {
-        "children": [],
-        "label": "test-markup-fragment",
-        "url": "index.html"
+        "label": "Chapter 1. Loomings.",
+        "level": 1,
+        "url": "#chapter-1-loomings",
+        "children": []
       }
     ],
     "url": "contents.json"
@@ -1778,12 +1781,13 @@ Object {
   "children": Array [
     Object {
       "children": Array [],
-      "label": "test-markup-fragment",
-      "url": "index.html",
+      "label": "Chapter 1. Loomings.",
+      "level": 1,
+      "url": "#chapter-1-loomings",
     },
   ],
-  "heading": "test-markup-fragment Contents",
-  "type": "Markup",
+  "heading": "Chapter 1. Loomings.",
+  "type": "Headings",
   "url": "contents.json",
 }
 `
