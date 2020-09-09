@@ -189,10 +189,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "75.212596px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(75.212596 0 0 75.212596 153.0265116875 234.41514200000006)"
+                          "textLength": "584.627508708",
+                          "y": "234.41514200000006",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -205,10 +209,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 309.6277379999999)"
+                          "textLength": "281.267904484",
+                          "y": "309.6277379999999",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -221,10 +229,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "60.810184px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(60.810184 0 0 60.810184 153.0265116875 433.648508)"
+                          "textLength": "423.056450088",
+                          "y": "433.648508",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -237,10 +249,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 505.660568)"
+                          "textLength": "110.341679136",
+                          "y": "505.660568",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -253,10 +269,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "60.810184px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(60.810184 0 0 60.810184 153.0265116875 629.6813380000001)"
+                          "textLength": "605.304571536",
+                          "y": "629.6813380000001",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -269,10 +289,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 701.693398)"
+                          "textLength": "853.27089894",
+                          "y": "701.693398",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -285,10 +309,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 752.901974)"
+                          "textLength": "848.9725790919999",
+                          "y": "752.901974",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -301,10 +329,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 804.11055)"
+                          "textLength": "872.8309747039999",
+                          "y": "804.11055",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -317,10 +349,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 855.319126)"
+                          "textLength": "822.720182552",
+                          "y": "855.319126",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -333,10 +369,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 906.527702)"
+                          "textLength": "852.6723987080001",
+                          "y": "906.527702",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -349,10 +389,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 957.736278)"
+                          "textLength": "864.642403348",
+                          "y": "957.736278",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -365,10 +409,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1008.944854)"
+                          "textLength": "831.126390356",
+                          "y": "1008.944854",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -381,10 +429,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1060.1534299999998)"
+                          "textLength": "853.7877855039998",
+                          "y": "1060.1534299999998",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -397,10 +449,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1111.362006)"
+                          "textLength": "837.3834382359997",
+                          "y": "1111.362006",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -413,10 +469,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1162.570582)"
+                          "textLength": "158.11287947199997",
+                          "y": "1162.570582",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -429,10 +489,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1254.585992)"
+                          "textLength": "851.5298073559998",
+                          "y": "1254.585992",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -445,10 +509,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1305.794568)"
+                          "textLength": "840.8656214040002",
+                          "y": "1305.794568",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -461,10 +529,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1357.003144)"
+                          "textLength": "800.7661058599999",
+                          "y": "1357.003144",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -477,10 +549,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1408.21172)"
+                          "textLength": "826.175161164",
+                          "y": "1408.21172",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -493,10 +569,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1459.420296)"
+                          "textLength": "882.461387528",
+                          "y": "1459.420296",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -509,10 +589,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1510.628872)"
+                          "textLength": "844.538236464",
+                          "y": "1510.628872",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -610,10 +694,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 177.6049240000002)"
+                          "textLength": "796.6038087919999",
+                          "y": "177.6049240000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -626,10 +714,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 228.8135000000002)"
+                          "textLength": "847.068260172",
+                          "y": "228.8135000000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -642,10 +734,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 280.0220760000002)"
+                          "textLength": "878.84318158",
+                          "y": "280.0220760000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -658,10 +754,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 331.2306520000002)"
+                          "textLength": "186.02475392799997",
+                          "y": "331.2306520000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -674,10 +774,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 423.24606200000017)"
+                          "textLength": "804.2754935840001",
+                          "y": "423.24606200000017",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -690,10 +794,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 474.45463800000016)"
+                          "textLength": "772.854231404",
+                          "y": "474.45463800000016",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -706,10 +814,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 525.6632140000002)"
+                          "textLength": "857.8956734600001",
+                          "y": "525.6632140000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -722,10 +834,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 576.8717900000001)"
+                          "textLength": "862.4388343119998",
+                          "y": "576.8717900000001",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -738,10 +854,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 628.0803660000001)"
+                          "textLength": "840.267121172",
+                          "y": "628.0803660000001",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -754,10 +874,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 679.2889420000001)"
+                          "textLength": "874.027975168",
+                          "y": "679.2889420000001",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -770,10 +894,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 771.3043520000001)"
+                          "textLength": "881.7268645160001",
+                          "y": "771.3043520000001",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -786,10 +914,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 822.5129280000003)"
+                          "textLength": "826.5560249479998",
+                          "y": "822.5129280000003",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -802,10 +934,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 873.7215040000003)"
+                          "textLength": "853.3525126080002",
+                          "y": "873.7215040000003",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -818,10 +954,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 924.9300800000003)"
+                          "textLength": "845.272759476",
+                          "y": "924.9300800000003",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -834,10 +974,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 976.1386560000003)"
+                          "textLength": "845.952873376",
+                          "y": "976.1386560000003",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -850,10 +994,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1027.3472320000003)"
+                          "textLength": "817.0888394599998",
+                          "y": "1027.3472320000003",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -866,10 +1014,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1078.5558080000003)"
+                          "textLength": "853.6245581679999",
+                          "y": "1078.5558080000003",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -882,10 +1034,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1129.7643840000003)"
+                          "textLength": "854.0054219519997",
+                          "y": "1129.7643840000003",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -898,10 +1054,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1180.9729600000003)"
+                          "textLength": "744.9423569480001",
+                          "y": "1180.9729600000003",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -914,10 +1074,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1232.1815360000003)"
+                          "textLength": "290.6806808600001",
+                          "y": "1232.1815360000003",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -930,10 +1094,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1324.1969460000003)"
+                          "textLength": "798.372104932",
+                          "y": "1324.1969460000003",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -946,10 +1114,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1375.4055220000002)"
+                          "textLength": "845.055123028",
+                          "y": "1375.4055220000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -962,10 +1134,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1426.6140980000002)"
+                          "textLength": "769.2088209000001",
+                          "y": "1426.6140980000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -978,10 +1154,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1477.8226740000002)"
+                          "textLength": "825.9031156039998",
+                          "y": "1477.8226740000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1079,10 +1259,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 177.60662000000025)"
+                          "textLength": "793.4752848520001",
+                          "y": "177.60662000000025",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1095,10 +1279,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 269.6220300000002)"
+                          "textLength": "862.357220644",
+                          "y": "269.6220300000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1111,10 +1299,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 320.8306060000002)"
+                          "textLength": "875.8778849759999",
+                          "y": "320.8306060000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1127,10 +1319,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 372.0391820000002)"
+                          "textLength": "868.0429728479999",
+                          "y": "372.0391820000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1143,10 +1339,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 423.2477580000002)"
+                          "textLength": "570.397925652",
+                          "y": "423.2477580000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1159,10 +1359,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 515.2631680000002)"
+                          "textLength": "842.1170309800002",
+                          "y": "515.2631680000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1175,10 +1379,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 566.4717440000002)"
+                          "textLength": "816.789589344",
+                          "y": "566.4717440000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1191,10 +1399,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 617.6803200000002)"
+                          "textLength": "881.15556884",
+                          "y": "617.6803200000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1207,10 +1419,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 668.8888960000006)"
+                          "textLength": "822.448136992",
+                          "y": "668.8888960000006",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1223,10 +1439,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 720.0974720000006)"
+                          "textLength": "791.6797841560001",
+                          "y": "720.0974720000006",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1239,10 +1459,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 771.3060480000006)"
+                          "textLength": "825.8759110479997",
+                          "y": "771.3060480000006",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1255,10 +1479,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 822.5146240000006)"
+                          "textLength": "147.530307188",
+                          "y": "822.5146240000006",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1271,10 +1499,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 914.5300340000006)"
+                          "textLength": "828.8956167639999",
+                          "y": "914.5300340000006",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1287,10 +1519,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 965.7386100000006)"
+                          "textLength": "872.31408814",
+                          "y": "965.7386100000006",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1303,10 +1539,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1016.9471860000006)"
+                          "textLength": "866.247472152",
+                          "y": "1016.9471860000006",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1319,10 +1559,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1068.1557620000005)"
+                          "textLength": "794.699489872",
+                          "y": "1068.1557620000005",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1335,10 +1579,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1119.3643380000005)"
+                          "textLength": "834.9078236400001",
+                          "y": "1119.3643380000005",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1351,10 +1599,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1170.5729140000005)"
+                          "textLength": "795.6244447760002",
+                          "y": "1170.5729140000005",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1367,10 +1619,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1221.7814900000005)"
+                          "textLength": "839.0429161519999",
+                          "y": "1221.7814900000005",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1383,10 +1639,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1272.9900660000005)"
+                          "textLength": "879.441681812",
+                          "y": "1272.9900660000005",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1399,10 +1659,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1324.1986420000005)"
+                          "textLength": "771.6572309399999",
+                          "y": "1324.1986420000005",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1415,10 +1679,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1375.4072180000005)"
+                          "textLength": "812.681701388",
+                          "y": "1375.4072180000005",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1431,10 +1699,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1426.6157940000005)"
+                          "textLength": "864.043903116",
+                          "y": "1426.6157940000005",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1447,10 +1719,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1477.8243700000005)"
+                          "textLength": "510.68392523200004",
+                          "y": "1477.8243700000005",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1548,10 +1824,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 177.60631600000056)"
+                          "textLength": "845.572009592",
+                          "y": "177.60631600000056",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1564,10 +1844,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 228.81489200000055)"
+                          "textLength": "798.1272639279999",
+                          "y": "228.81489200000055",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1580,10 +1864,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 280.02346800000055)"
+                          "textLength": "843.2324177759999",
+                          "y": "280.02346800000055",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1596,10 +1884,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 331.23204400000054)"
+                          "textLength": "880.33943216",
+                          "y": "331.23204400000054",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1612,10 +1904,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 382.44062000000054)"
+                          "textLength": "764.2847962639999",
+                          "y": "382.44062000000054",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1628,10 +1924,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 433.64919600000053)"
+                          "textLength": "693.0360641000001",
+                          "y": "433.64919600000053",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1644,10 +1944,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 525.6646060000005)"
+                          "textLength": "835.778369432",
+                          "y": "525.6646060000005",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1660,10 +1964,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 576.8731820000005)"
+                          "textLength": "879.9585683759997",
+                          "y": "576.8731820000005",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1676,10 +1984,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 628.0817580000005)"
+                          "textLength": "879.6049091479999",
+                          "y": "628.0817580000005",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1692,10 +2004,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 679.2903340000005)"
+                          "textLength": "823.019432668",
+                          "y": "679.2903340000005",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1708,10 +2024,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 730.4989100000005)"
+                          "textLength": "777.424596812",
+                          "y": "730.4989100000005",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1724,10 +2044,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 781.7074860000005)"
+                          "textLength": "881.5364326239999",
+                          "y": "781.7074860000005",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1740,10 +2064,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 832.9160620000005)"
+                          "textLength": "860.4256971679999",
+                          "y": "832.9160620000005",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1756,10 +2084,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 884.1246380000005)"
+                          "textLength": "850.115170444",
+                          "y": "884.1246380000005",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1772,10 +2104,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 935.3332140000005)"
+                          "textLength": "795.0531491",
+                          "y": "935.3332140000005",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1788,10 +2124,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 986.5417900000004)"
+                          "textLength": "94.345400208",
+                          "y": "986.5417900000004",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1804,10 +2144,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "60.810184px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(60.810184 0 0 60.810184 153.0265116875 1110.5625600000005)"
+                          "textLength": "442.941380256",
+                          "y": "1110.5625600000005",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1820,10 +2164,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1182.5746200000006)"
+                          "textLength": "853.27089894",
+                          "y": "1182.5746200000006",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1836,10 +2184,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1233.7831960000005)"
+                          "textLength": "848.9725790919999",
+                          "y": "1233.7831960000005",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1852,10 +2204,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1284.9917720000005)"
+                          "textLength": "872.8309747039999",
+                          "y": "1284.9917720000005",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1868,10 +2224,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1336.2003480000005)"
+                          "textLength": "822.720182552",
+                          "y": "1336.2003480000005",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1884,10 +2244,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1387.4089240000005)"
+                          "textLength": "852.6723987080001",
+                          "y": "1387.4089240000005",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1900,10 +2264,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1438.6175000000005)"
+                          "textLength": "864.642403348",
+                          "y": "1438.6175000000005",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -1916,10 +2284,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1489.8260760000005)"
+                          "textLength": "831.126390356",
+                          "y": "1489.8260760000005",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2017,10 +2389,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 177.60601200000042)"
+                          "textLength": "853.7877855039998",
+                          "y": "177.60601200000042",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2033,10 +2409,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 228.8145880000004)"
+                          "textLength": "837.3834382359997",
+                          "y": "228.8145880000004",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2049,10 +2429,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 280.0231640000004)"
+                          "textLength": "158.11287947199997",
+                          "y": "280.0231640000004",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2065,10 +2449,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 372.0385740000004)"
+                          "textLength": "851.5298073559998",
+                          "y": "372.0385740000004",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2081,10 +2469,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 423.2471500000004)"
+                          "textLength": "840.8656214040002",
+                          "y": "423.2471500000004",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2097,10 +2489,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 474.45572600000037)"
+                          "textLength": "800.7661058599999",
+                          "y": "474.45572600000037",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2113,10 +2509,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 525.6643020000004)"
+                          "textLength": "826.175161164",
+                          "y": "525.6643020000004",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2129,10 +2529,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 576.8728780000004)"
+                          "textLength": "882.461387528",
+                          "y": "576.8728780000004",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2145,10 +2549,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 628.0814540000003)"
+                          "textLength": "844.538236464",
+                          "y": "628.0814540000003",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2161,10 +2569,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 679.2900300000003)"
+                          "textLength": "796.6038087919999",
+                          "y": "679.2900300000003",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2177,10 +2589,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 730.4986060000003)"
+                          "textLength": "847.068260172",
+                          "y": "730.4986060000003",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2193,10 +2609,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 781.7071820000003)"
+                          "textLength": "878.84318158",
+                          "y": "781.7071820000003",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2209,10 +2629,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 832.9157580000003)"
+                          "textLength": "186.02475392799997",
+                          "y": "832.9157580000003",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2225,10 +2649,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 924.9311680000003)"
+                          "textLength": "804.2754935840001",
+                          "y": "924.9311680000003",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2241,10 +2669,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 976.1397440000003)"
+                          "textLength": "772.854231404",
+                          "y": "976.1397440000003",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2257,10 +2689,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1027.3483200000003)"
+                          "textLength": "857.8956734600001",
+                          "y": "1027.3483200000003",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2273,10 +2709,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1078.5568960000003)"
+                          "textLength": "862.4388343119998",
+                          "y": "1078.5568960000003",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2289,10 +2729,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1129.7654720000003)"
+                          "textLength": "840.267121172",
+                          "y": "1129.7654720000003",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2305,10 +2749,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1180.9740480000003)"
+                          "textLength": "874.027975168",
+                          "y": "1180.9740480000003",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2321,10 +2769,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1272.9894580000002)"
+                          "textLength": "881.7268645160001",
+                          "y": "1272.9894580000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2337,10 +2789,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1324.1980340000002)"
+                          "textLength": "826.5560249479998",
+                          "y": "1324.1980340000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2353,10 +2809,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1375.4066100000002)"
+                          "textLength": "853.3525126080002",
+                          "y": "1375.4066100000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2369,10 +2829,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1426.6151860000002)"
+                          "textLength": "845.272759476",
+                          "y": "1426.6151860000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2385,10 +2849,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1477.8237620000002)"
+                          "textLength": "845.952873376",
+                          "y": "1477.8237620000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2486,10 +2954,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 177.60570800000028)"
+                          "textLength": "817.0888394599998",
+                          "y": "177.60570800000028",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2502,10 +2974,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 229.61441799999943)"
+                          "textLength": "853.6245581679999",
+                          "y": "229.61441799999943",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2518,10 +2994,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 280.8229939999994)"
+                          "textLength": "854.0054219519997",
+                          "y": "280.8229939999994",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2534,10 +3014,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 332.0315699999994)"
+                          "textLength": "744.9423569480001",
+                          "y": "332.0315699999994",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2550,10 +3034,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 383.2401459999994)"
+                          "textLength": "290.6806808600001",
+                          "y": "383.2401459999994",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2566,10 +3054,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 474.4554220000002)"
+                          "textLength": "798.372104932",
+                          "y": "474.4554220000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2582,10 +3074,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 525.6639980000002)"
+                          "textLength": "845.055123028",
+                          "y": "525.6639980000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2598,10 +3094,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 576.8725740000002)"
+                          "textLength": "769.2088209000001",
+                          "y": "576.8725740000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2614,10 +3114,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 628.0811500000002)"
+                          "textLength": "825.9031156039998",
+                          "y": "628.0811500000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2630,10 +3134,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 679.2897260000002)"
+                          "textLength": "793.4752848520001",
+                          "y": "679.2897260000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2646,10 +3154,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 771.3051360000002)"
+                          "textLength": "862.357220644",
+                          "y": "771.3051360000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2662,10 +3174,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 822.5137120000002)"
+                          "textLength": "875.8778849759999",
+                          "y": "822.5137120000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2678,10 +3194,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 873.7222880000002)"
+                          "textLength": "868.0429728479999",
+                          "y": "873.7222880000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2694,10 +3214,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 924.9308640000002)"
+                          "textLength": "570.397925652",
+                          "y": "924.9308640000002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2710,10 +3234,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1016.9462740000001)"
+                          "textLength": "842.1170309800002",
+                          "y": "1016.9462740000001",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2726,10 +3254,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1068.1548500000001)"
+                          "textLength": "816.789589344",
+                          "y": "1068.1548500000001",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2742,10 +3274,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1119.3634260000001)"
+                          "textLength": "881.15556884",
+                          "y": "1119.3634260000001",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2758,10 +3294,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1170.572002)"
+                          "textLength": "822.448136992",
+                          "y": "1170.572002",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2774,10 +3314,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1221.780578)"
+                          "textLength": "791.6797841560001",
+                          "y": "1221.780578",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2790,10 +3334,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1272.989154)"
+                          "textLength": "825.8759110479997",
+                          "y": "1272.989154",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2806,10 +3354,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1324.19773)"
+                          "textLength": "147.530307188",
+                          "y": "1324.19773",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2822,10 +3374,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1416.21314)"
+                          "textLength": "828.8956167639999",
+                          "y": "1416.21314",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2838,10 +3394,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1467.4217159999992)"
+                          "textLength": "872.31408814",
+                          "y": "1467.4217159999992",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2854,10 +3414,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1518.630292)"
+                          "textLength": "866.247472152",
+                          "y": "1518.630292",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2955,10 +3519,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 177.60540400000014)"
+                          "textLength": "794.699489872",
+                          "y": "177.60540400000014",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2971,10 +3539,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 228.81398000000104)"
+                          "textLength": "834.9078236400001",
+                          "y": "228.81398000000104",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -2987,10 +3559,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 280.0225560000001)"
+                          "textLength": "795.6244447760002",
+                          "y": "280.0225560000001",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -3003,10 +3579,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 331.231132000001)"
+                          "textLength": "839.0429161519999",
+                          "y": "331.231132000001",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -3019,10 +3599,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 382.4397080000001)"
+                          "textLength": "879.441681812",
+                          "y": "382.4397080000001",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -3035,10 +3619,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 433.648284000001)"
+                          "textLength": "771.6572309399999",
+                          "y": "433.648284000001",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -3051,10 +3639,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 484.8568600000001)"
+                          "textLength": "812.681701388",
+                          "y": "484.8568600000001",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -3067,10 +3659,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 536.065436000001)"
+                          "textLength": "864.043903116",
+                          "y": "536.065436000001",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -3083,10 +3679,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 587.2740120000001)"
+                          "textLength": "510.68392523200004",
+                          "y": "587.2740120000001",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -3099,10 +3699,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 679.2894220000001)"
+                          "textLength": "845.572009592",
+                          "y": "679.2894220000001",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -3115,10 +3719,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 730.497998000001)"
+                          "textLength": "798.1272639279999",
+                          "y": "730.497998000001",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -3131,10 +3739,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 781.706574)"
+                          "textLength": "843.2324177759999",
+                          "y": "781.706574",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -3147,10 +3759,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 832.915150000001)"
+                          "textLength": "880.33943216",
+                          "y": "832.915150000001",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -3163,10 +3779,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 884.123726)"
+                          "textLength": "764.2847962639999",
+                          "y": "884.123726",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -3179,10 +3799,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 935.3323020000009)"
+                          "textLength": "693.0360641000001",
+                          "y": "935.3323020000009",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -3195,10 +3819,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1027.347712000001)"
+                          "textLength": "835.778369432",
+                          "y": "1027.347712000001",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -3211,10 +3839,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1078.556288)"
+                          "textLength": "879.9585683759997",
+                          "y": "1078.556288",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -3227,10 +3859,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1129.764864000001)"
+                          "textLength": "879.6049091479999",
+                          "y": "1129.764864000001",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -3243,10 +3879,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1180.97344)"
+                          "textLength": "823.019432668",
+                          "y": "1180.97344",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -3259,10 +3899,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1232.1820160000009)"
+                          "textLength": "777.424596812",
+                          "y": "1232.1820160000009",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -3275,10 +3919,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1283.390592)"
+                          "textLength": "881.5364326239999",
+                          "y": "1283.390592",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -3291,10 +3939,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1334.5991680000009)"
+                          "textLength": "860.4256971679999",
+                          "y": "1334.5991680000009",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -3307,10 +3959,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1385.807744)"
+                          "textLength": "850.115170444",
+                          "y": "1385.807744",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -3323,10 +3979,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1437.0163200000009)"
+                          "textLength": "795.0531491",
+                          "y": "1437.0163200000009",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {
@@ -3339,10 +3999,14 @@ exports[`tests/pdf.test.js TAP pdf process > pdf file test-file.pdf contents 11`
                         "type": "element",
                         "tagName": "text",
                         "properties": {
-                          "fontSize": "0.95",
+                          "fontSize": "27.204556px",
+                          "lengthAdjust": "spacingAndGlyphs",
                           "fill": "transparent",
                           "fontFamily": "sans-serif",
-                          "transform": "matrix(27.204556 0 0 27.204556 153.0265116875 1488.224896)"
+                          "textLength": "94.345400208",
+                          "y": "1488.224896",
+                          "x": "153.0265116875",
+                          "direction": "ltr"
                         },
                         "children": [
                           {

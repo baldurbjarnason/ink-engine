@@ -43,7 +43,7 @@ module.exports = async function*({ data, filename = "PDF.pdf" }) {
     contentType: "application/json",
     path: "index.json"
   });
-
+  // processmarkup should create a toc file that we then just yield
   const toc = getToC(name, numPages);
   yield vfile({
     contents: JSON.stringify(toc),
@@ -98,9 +98,41 @@ async function getPageText(page, viewport, filepath) {
       [1, 0, 0, -1, 0, 0]
     );
     var style = textContent.styles[textItem.fontName];
-    return `<text transform="${"matrix(" + tx.join(" ") + ")"}" font-family="${
+    var fontHeight = Math.sqrt(tx[2] * tx[2] + tx[3] * tx[3]);
+    let width = textItem.width * 2;
+    if (style.vertical) {
+      width = textItem.height * 2;
+    }
+    var angle = Math.atan2(tx[1], tx[0]);
+    if (style.vertical) {
+      angle += Math.PI / 2;
+    }
+    var fontAscent = fontHeight;
+    if (style.ascent) {
+      fontAscent = style.ascent * fontAscent;
+    } else if (style.descent) {
+      fontAscent = (1 + style.descent) * fontAscent;
+    }
+    let left, top;
+    if (angle === 0) {
+      left = tx[4];
+      top = tx[5] - fontAscent;
+    } else {
+      left = tx[4] + fontAscent * Math.sin(angle);
+      top = tx[5] - fontAscent * Math.cos(angle);
+    }
+    let transform = "";
+    if (angle !== 0) {
+      transform = `transform="rotate(${angle}deg)"`;
+    }
+    return `<text direction="${
+      textItem.dir
+    }" x="${left}" ${transform} y="${top +
+      fontHeight}" textLength="${width}" font-family="${
       style.fontFamily
-    }" fill="transparent" font-size="0.95">${textItem.str}</text>`;
+    }" fill="transparent" lengthAdjust="spacingAndGlyphs" font-size="${fontHeight}px">${
+      textItem.str
+    }</text>`;
   });
   return `<ink-page data-pdf-page="${page.pageNumber}" id="page${
     page.pageNumber
@@ -185,6 +217,9 @@ async function processMarkup(html, resource, book, toc) {
   // const result = vfile({ contents: clean });
   result.path = resource.url + ".json";
   result.contentType = "application/json";
+  result.data = Object.assign({}, result.data, {
+    headings: result.contents.data.headings
+  });
   const contents = {
     contents: result.contents,
     resource,
