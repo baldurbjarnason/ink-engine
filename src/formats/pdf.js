@@ -136,7 +136,7 @@ async function getPageText(page, viewport, filepath) {
     page.pageNumber
   }"><h2 data-ink-page-header><span data-ink-page-label>Page </span><span data-ink-page-number>${
     page.pageNumber
-  }</span></span></h2><svg xmlns="http://www.w3.org/2000/svg" width="${
+  }</span></h2><svg xmlns="http://www.w3.org/2000/svg" width="${
     viewport.width
   }px" height="${viewport.height}px" preserveAspectRatio="none" viewBox="0 0 ${
     viewport.width
