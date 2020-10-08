@@ -18,7 +18,8 @@ tap.test("thumbnails process", async test => {
     thumbnails: true
   })) {
     if (vfile.contentType && vfile.contentType.includes("image")) {
-      test.matchSnapshot(vfile, "thumbnails " + vfile.path);
+      test.ok(vfile);
+      test.ok(vfile.path === "1.png" || vfile.path === "thumbnails/1.png.jpg");
     }
   }
 });
