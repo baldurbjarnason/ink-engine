@@ -11,7 +11,7 @@ tap.cleanSnapshot = s => {
 
 const docxPath = path.join(__dirname, "fixtures/test.docx");
 
-tap.test("thumbnails process", async test => {
+tap.skip("thumbnails process", async test => {
   for await (const vfile of docx({
     filename: docxPath,
     mediaType: "docx",
