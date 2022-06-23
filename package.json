@@ -30,7 +30,7 @@
     "hast-util-select": "^3.0.1",
     "hast-util-to-text": "^1.0.1",
     "hastscript": "^5.1.2",
-    "jsdom": "^15.2.1",
+    "jsdom": "^16.5.0",
     "mammoth": "^1.4.16",
     "mime": "^2.5.2",
     "nlcst-to-string": "^2.0.4",
