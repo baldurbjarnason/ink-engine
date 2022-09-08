@@ -31,7 +31,7 @@
     "hast-util-to-text": "^1.0.1",
     "hastscript": "^5.1.2",
     "jsdom": "^15.2.1",
-    "mammoth": "^1.4.16",
+    "mammoth": "^1.5.1",
     "mime": "^2.5.2",
     "nlcst-to-string": "^2.0.4",
     "pdfjs-dist": "^2.6.347",
